@@ -1,0 +1,875 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.29)  15 SEP 2025 09:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**manuscript.tex
+(./manuscript.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(c:/texlive/2025/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen141
+\@IEEEtrantmpdimenB=\dimen142
+\@IEEEtrantmpdimenC=\dimen143
+\@IEEEtrantmpcountA=\count196
+\@IEEEtrantmpcountB=\count197
+\@IEEEtrantmpcountC=\count198
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen144
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen145
+\CLASSINFOnormalsizeunitybaselineskip=\dimen146
+\IEEEnormaljot=\dimen147
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen148
+\IEEEquantizedlengthdiff=\dimen149
+\IEEEquantizedtextheightdiff=\dimen150
+\IEEEilabelindentA=\dimen151
+\IEEEilabelindentB=\dimen152
+\IEEEilabelindent=\dimen153
+\IEEEelabelindent=\dimen154
+\IEEEdlabelindent=\dimen155
+\IEEElabelindent=\dimen156
+\IEEEiednormlabelsep=\dimen157
+\IEEEiedmathlabelsep=\dimen158
+\IEEEiedtopsep=\skip49
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@IEEEsubequation=\count269
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count270
+\c@table=\count271
+\@IEEEeqnnumcols=\count272
+\@IEEEeqncolcnt=\count273
+\@IEEEsubeqnnumrollback=\count274
+\@IEEEquantizeheightA=\dimen159
+\@IEEEquantizeheightB=\dimen160
+\@IEEEquantizeheightC=\dimen161
+\@IEEEquantizeprevdepth=\dimen162
+\@IEEEquantizemultiple=\count275
+\@IEEEquantizeboxA=\box52
+\@IEEEtmpitemindent=\dimen163
+\IEEEPARstartletwidth=\dimen164
+\c@IEEEbiography=\count276
+\@IEEEtranrubishbin=\box53
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box54
+\extrarowheight=\dimen166
+\NC@list=\toks18
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box55
+)
+(c:/texlive/2025/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen167
+\captionmargin=\dimen168
+\caption@leftmargin=\dimen169
+\caption@rightmargin=\dimen170
+\caption@width=\dimen171
+\caption@indent=\dimen172
+\caption@parindent=\dimen173
+\caption@hangindent=\dimen174
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
+)
+\c@KVtest=\count277
+\sf@farskip=\skip54
+\sf@captopadj=\dimen175
+\sf@capskip=\skip55
+\sf@nearskip=\skip56
+\c@subfigure=\count278
+\c@subfigure@save=\count279
+\c@lofdepth=\count280
+\c@subtable=\count281
+\c@subtable@save=\count282
+\c@lotdepth=\count283
+\sf@top=\skip57
+\sf@bottom=\skip58
+)
+(c:/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(c:/texlive/2025/texmf-dist/tex/latex/sttools/stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
+ings
+\@dblbotnum=\count284
+\c@dblbotnumber=\count285
+)
+(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks20
+\verbatim@line=\toks21
+\verbatim@in@stream=\read2
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen176
+\Gin@req@width=\dimen177
+)
+(c:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(c:/texlive/2025/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count286
+
+(c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip59
+
+(c:/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count287
+)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip60
+\skiplinenumber=\skip61
+\skiprule=\skip62
+\skiphlne=\skip63
+\skiptext=\skip64
+\skiplength=\skip65
+\algomargin=\skip66
+\skipalgocfslide=\skip67
+\algowidth=\dimen178
+\inoutsize=\dimen179
+\inoutindent=\dimen180
+\interspacetitleruled=\dimen181
+\interspacealgoruled=\dimen182
+\interspacetitleboxruled=\dimen183
+\algocf@ruledwidth=\skip68
+\algocf@inoutbox=\box56
+\algocf@inputbox=\box57
+\AlCapSkip=\skip69
+\AlCapHSkip=\skip70
+\algoskipindent=\skip71
+\algocf@nlbox=\box58
+\algocf@hangingbox=\box59
+\algocf@untilbox=\box60
+\algocf@skipuntil=\skip72
+\algocf@capbox=\box61
+\algocf@lcaptionbox=\skip73
+\algoheightruledefault=\skip74
+\algoheightrule=\skip75
+\algotitleheightruledefault=\skip76
+\algotitleheightrule=\skip77
+\c@algocfline=\count288
+\c@algocfproc=\count289
+\c@algocf=\count290
+\algocf@algoframe=\box62
+\algocf@algobox=\box63
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip78
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen184
+))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen185
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box64
+\strutbox@=\box65
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen186
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count296
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip18
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks23
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks24
+\eqnshift@=\dimen187
+\alignsep@=\dimen188
+\tagshift@=\dimen189
+\tagwidth@=\dimen190
+\totwidth@=\dimen191
+\lineht@=\dimen192
+\@envbody=\toks25
+\multlinegap=\skip79
+\multlinetaggap=\skip80
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2025/texmf-dist/tex/latex/subfloat/subfloat.sty
+Package: subfloat 2003/08/21 version 2.14
+
+Package `subfloat', Version 2.14 of 2003/08/21.
+
+Package subfloat Warning: Numbers of floats not counted:
+(subfloat)                If you use one of the counters subfloatfiguremax or
+(subfloat)                subfloattablemax you will get strange error messages
+(subfloat)                containing \c@subfloatfiguremax or
+(subfloat)                \c@subfloattablemax:
+(subfloat)                Please switch on countmax or remove the code using
+(subfloat)                the counter then..
+
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen193
+\TX@old@table=\dimen194
+\TX@old@col=\dimen195
+\TX@target=\dimen196
+\TX@delta=\dimen197
+\TX@cols=\count303
+\TX@ftn=\toks27
+)
+(c:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip81
+\multirow@cntb=\count304
+\multirow@dima=\skip82
+\bigstrutjot=\dimen198
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2025/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(c:/texlive/2025/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks28
+\SOUL@lasttoken=\toks29
+\SOUL@syllable=\toks30
+\SOUL@cmds=\toks31
+\SOUL@buffer=\toks32
+\SOUL@token=\toks33
+\SOUL@syllgoal=\dimen199
+\SOUL@syllwidth=\dimen256
+\SOUL@charkern=\dimen257
+\SOUL@hyphkern=\dimen258
+\SOUL@dimen=\dimen259
+\SOUL@dimeni=\dimen260
+\SOUL@minus=\count305
+\SOUL@comma=\count306
+\SOUL@apo=\count307
+\SOUL@grave=\count308
+\SOUL@spaceskip=\skip83
+\SOUL@ttwidth=\dimen261
+\SOUL@uldp=\dimen262
+\SOUL@ulht=\dimen263
+)
+(c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)))
+(c:/texlive/2025/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(c:/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen264
+\c@nlinenum=\count309
+\TeXr@lab=\toks34
+)
+(c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen265
+\lightrulewidth=\dimen266
+\cmidrulewidth=\dimen267
+\belowrulesep=\dimen268
+\belowbottomsep=\dimen269
+\aboverulesep=\dimen270
+\abovetopsep=\dimen271
+\cmidrulesep=\dimen272
+\cmidrulekern=\dimen273
+\defaultaddspace=\dimen274
+\@cmidla=\count310
+\@cmidlb=\count311
+\@aboverulesep=\dimen275
+\@belowrulesep=\dimen276
+\@thisruleclass=\count312
+\@lastruleclass=\count313
+\@thisrulewidth=\dimen277
+)
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count314
+\l__pdf_internal_box=\box66
+)
+
+LaTeX Warning: Unused global option(s):
+    [lettersize].
+
+(./manuscript.aux)
+\openout1 = `manuscript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+
+-- Lines per column: 58 (exact).
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count315
+\scratchdimen=\dimen278
+\scratchbox=\box67
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen279
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks36
+) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Underfull \hbox (badness 1442) in paragraph at lines 62--63
+[]\OT1/ptm/b/n/9 To ad-dress these lim-i-ta-tions, we pro-pose AL-Fur-ther, a
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
+2.
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2
+025/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 111--112
+ \OT1/ptm/m/it/10 1) Coverage-guided Fuzzing: [][] \OT1/ptm/m/n/10 Gen-er-ally,
+ the tar-get of
+ []
+
+
+
+[2]
+
+<fig/simplified_overview.pdf, id=20, 493.845pt x 174.6525pt>
+File: fig/simplified_overview.pdf Graphic file (type pdf)
+<use fig/simplified_overview.pdf>
+Package pdftex.def Info: fig/simplified_overview.pdf  used on input line 179.
+(pdftex.def)             Requested size: 464.39685pt x 164.23732pt.
+
+
+[3]
+Underfull \hbox (badness 2846) in paragraph at lines 207--208
+[]\OT1/ptm/b/n/10 Global Bitmap\OT1/ptm/m/n/10 : a cu-mu-la-tive bitmap track-i
+ng all
+ []
+
+
+
+
+Underfull \vbox (badness 2707) has occurred while \output is active []
+
+
+
+[4 <./fig/simplified_overview.pdf>]
+<fig/agent_structure2.pdf, id=41, 204.765pt x 174.6525pt>
+File: fig/agent_structure2.pdf Graphic file (type pdf)
+<use fig/agent_structure2.pdf>
+Package pdftex.def Info: fig/agent_structure2.pdf  used on input line 251.
+(pdftex.def)             Requested size: 258.0pt x 220.07396pt.
+
+
+LaTeX Warning: Reference `subsec:sample_construction' on page 5 undefined on in
+put line 255.
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 260--261
+[]\OT1/ptm/b/n/10 Observer\OT1/ptm/m/n/10 : im-ple-mented via a pre-trained Res
+Net[]18
+ []
+
+
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+72.
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+[5 <./fig/agent_structure2.pdf>]
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
+
+
+
+
+[6]
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 518--519
+[]\OT1/ptm/m/n/10 In our eval-u-a-tion, we em-ployed 12 tar-gets from the
+ []
+
+
+
+[7]
+
+<results/coverage/cflow_edge_cov.pdf, id=68, 462.52798pt x 346.89601pt>
+File: results/coverage/cflow_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/cflow_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/cflow_edge_cov.pdf  used on input lin
+e 576.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 5
+76.
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+<results/coverage/flvmeta_edge_cov.pdf, id=69, 462.52798pt x 346.89601pt>
+File: results/coverage/flvmeta_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/flvmeta_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/flvmeta_edge_cov.pdf  used on input l
+ine 577.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/imginfo_edge_cov.pdf, id=70, 462.52798pt x 346.89601pt>
+File: results/coverage/imginfo_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/imginfo_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/imginfo_edge_cov.pdf  used on input l
+ine 578.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/infotocap_edge_cov.pdf, id=71, 462.52798pt x 346.89601pt>
+File: results/coverage/infotocap_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/infotocap_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/infotocap_edge_cov.pdf  used on input
+ line 579.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/jhead_edge_cov.pdf, id=72, 462.52798pt x 346.89601pt>
+File: results/coverage/jhead_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/jhead_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/jhead_edge_cov.pdf  used on input lin
+e 581.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/jq_edge_cov.pdf, id=73, 462.52798pt x 346.89601pt>
+File: results/coverage/jq_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/jq_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/jq_edge_cov.pdf  used on input line 5
+82.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/mp3gain_edge_cov.pdf, id=74, 462.52798pt x 346.89601pt>
+File: results/coverage/mp3gain_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/mp3gain_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/mp3gain_edge_cov.pdf  used on input l
+ine 583.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/mp42aac_edge_cov.pdf, id=75, 462.52798pt x 346.89601pt>
+File: results/coverage/mp42aac_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/mp42aac_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/mp42aac_edge_cov.pdf  used on input l
+ine 584.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/mujs_edge_cov.pdf, id=76, 462.52798pt x 346.89601pt>
+File: results/coverage/mujs_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/mujs_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/mujs_edge_cov.pdf  used on input line
+ 586.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/pdftotext_edge_cov.pdf, id=77, 462.52798pt x 346.89601pt>
+File: results/coverage/pdftotext_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/pdftotext_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/pdftotext_edge_cov.pdf  used on input
+ line 587.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/tcpdump_edge_cov.pdf, id=78, 462.52798pt x 346.89601pt>
+File: results/coverage/tcpdump_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/tcpdump_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/tcpdump_edge_cov.pdf  used on input l
+ine 588.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/coverage/tiffsplit_edge_cov.pdf, id=79, 462.52798pt x 346.89601pt>
+File: results/coverage/tiffsplit_edge_cov.pdf Graphic file (type pdf)
+<use results/coverage/tiffsplit_edge_cov.pdf>
+Package pdftex.def Info: results/coverage/tiffsplit_edge_cov.pdf  used on input
+ line 589.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<results/crash/cflow_crash.pdf, id=80, 462.52798pt x 346.89601pt>
+File: results/crash/cflow_crash.pdf Graphic file (type pdf)
+<use results/crash/cflow_crash.pdf>
+Package pdftex.def Info: results/crash/cflow_crash.pdf  used on input line 602.
+
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<results/crash/flvmeta_crash.pdf, id=81, 462.52798pt x 346.89601pt>
+File: results/crash/flvmeta_crash.pdf Graphic file (type pdf)
+<use results/crash/flvmeta_crash.pdf>
+Package pdftex.def Info: results/crash/flvmeta_crash.pdf  used on input line 60
+3.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<results/crash/mp3gain_crash.pdf, id=82, 462.52798pt x 346.89601pt>
+File: results/crash/mp3gain_crash.pdf Graphic file (type pdf)
+<use results/crash/mp3gain_crash.pdf>
+Package pdftex.def Info: results/crash/mp3gain_crash.pdf  used on input line 60
+4.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<results/crash/mp42aac_crash.pdf, id=83, 462.52798pt x 346.89601pt>
+File: results/crash/mp42aac_crash.pdf Graphic file (type pdf)
+<use results/crash/mp42aac_crash.pdf>
+Package pdftex.def Info: results/crash/mp42aac_crash.pdf  used on input line 60
+6.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<results/crash/pdftotext_crash.pdf, id=84, 462.52798pt x 346.89601pt>
+File: results/crash/pdftotext_crash.pdf Graphic file (type pdf)
+<use results/crash/pdftotext_crash.pdf>
+Package pdftex.def Info: results/crash/pdftotext_crash.pdf  used on input line 
+607.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<results/crash/tiffsplit_crash.pdf, id=85, 462.52798pt x 346.89601pt>
+File: results/crash/tiffsplit_crash.pdf Graphic file (type pdf)
+<use results/crash/tiffsplit_crash.pdf>
+Package pdftex.def Info: results/crash/tiffsplit_crash.pdf  used on input line 
+608.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[9 <./results/coverage/cflow_edge_cov.pdf> <./results/coverage/flvmeta_edge_cov
+.pdf> <./results/coverage/imginfo_edge_cov.pdf> <./results/coverage/infotocap_e
+dge_cov.pdf> <./results/coverage/jhead_edge_cov.pdf> <./results/coverage/jq_edg
+e_cov.pdf> <./results/coverage/mp3gain_edge_cov.pdf> <./results/coverage/mp42aa
+c_edge_cov.pdf> <./results/coverage/mujs_edge_cov.pdf> <./results/coverage/pdft
+otext_edge_cov.pdf> <./results/coverage/tcpdump_edge_cov.pdf> <./results/covera
+ge/tiffsplit_edge_cov.pdf>]
+
+LaTeX Warning: Reference `appdx:magma_lua' on page 10 undefined on input line 6
+81.
+
+
+
+
+Underfull \vbox (badness 2401) has occurred while \output is active []
+
+
+
+[10 <./results/crash/cflow_crash.pdf> <./results/crash/flvmeta_crash.pdf> <./re
+sults/crash/mp3gain_crash.pdf> <./results/crash/mp42aac_crash.pdf> <./results/c
+rash/pdftotext_crash.pdf> <./results/crash/tiffsplit_crash.pdf>]
+
+<results/ablation_study/overhead_infotocap.pdf, id=898, 578.16pt x 433.62pt>
+File: results/ablation_study/overhead_infotocap.pdf Graphic file (type pdf)
+<use results/ablation_study/overhead_infotocap.pdf>
+Package pdftex.def Info: results/ablation_study/overhead_infotocap.pdf  used on
+ input line 855.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/overhead_imginfo.pdf, id=899, 578.16pt x 433.62pt>
+File: results/ablation_study/overhead_imginfo.pdf Graphic file (type pdf)
+<use results/ablation_study/overhead_imginfo.pdf>
+Package pdftex.def Info: results/ablation_study/overhead_imginfo.pdf  used on i
+nput line 856.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/overhead_pdftotext.pdf, id=900, 578.16pt x 433.62pt>
+File: results/ablation_study/overhead_pdftotext.pdf Graphic file (type pdf)
+<use results/ablation_study/overhead_pdftotext.pdf>
+Package pdftex.def Info: results/ablation_study/overhead_pdftotext.pdf  used on
+ input line 857.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/overhead_tiffsplit.pdf, id=901, 578.16pt x 433.62pt>
+File: results/ablation_study/overhead_tiffsplit.pdf Graphic file (type pdf)
+<use results/ablation_study/overhead_tiffsplit.pdf>
+Package pdftex.def Info: results/ablation_study/overhead_tiffsplit.pdf  used on
+ input line 858.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/reward_infotocap.pdf, id=902, 578.16pt x 433.62pt>
+File: results/ablation_study/reward_infotocap.pdf Graphic file (type pdf)
+<use results/ablation_study/reward_infotocap.pdf>
+Package pdftex.def Info: results/ablation_study/reward_infotocap.pdf  used on i
+nput line 865.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/reward_mp3gain.pdf, id=903, 578.16pt x 433.62pt>
+File: results/ablation_study/reward_mp3gain.pdf Graphic file (type pdf)
+<use results/ablation_study/reward_mp3gain.pdf>
+Package pdftex.def Info: results/ablation_study/reward_mp3gain.pdf  used on inp
+ut line 866.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/reward_pdftotext.pdf, id=904, 578.16pt x 433.62pt>
+File: results/ablation_study/reward_pdftotext.pdf Graphic file (type pdf)
+<use results/ablation_study/reward_pdftotext.pdf>
+Package pdftex.def Info: results/ablation_study/reward_pdftotext.pdf  used on i
+nput line 867.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+<results/ablation_study/reward_tiffsplit.pdf, id=905, 578.16pt x 433.62pt>
+File: results/ablation_study/reward_tiffsplit.pdf Graphic file (type pdf)
+<use results/ablation_study/reward_tiffsplit.pdf>
+Package pdftex.def Info: results/ablation_study/reward_tiffsplit.pdf  used on i
+nput line 868.
+(pdftex.def)             Requested size: 129.0pt x 96.74646pt.
+
+
+[11]
+
+
+
+[12 <./results/ablation_study/overhead_infotocap.pdf> <./results/ablation_study
+/overhead_imginfo.pdf> <./results/ablation_study/overhead_pdftotext.pdf> <./res
+ults/ablation_study/overhead_tiffsplit.pdf> <./results/ablation_study/reward_in
+fotocap.pdf> <./results/ablation_study/reward_mp3gain.pdf> <./results/ablation_
+study/reward_pdftotext.pdf> <./results/ablation_study/reward_tiffsplit.pdf>]
+
+
+
+[13]
+
+
+
+[14]
+
+
+
+[15] (./manuscript.bbl
+
+
+
+[16])
+
+
+
+[17
+
+] (./manuscript.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7252 strings out of 473190
+ 127191 string characters out of 5719979
+ 604005 words of memory out of 5000000
+ 30364 multiletter control sequences out of 15000+600000
+ 613102 words of font info for 133 fonts, out of 8000000 for 9000
+ 1145 hyphenation exceptions out of 8191
+ 57i,22n,65p,2204b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texl
+ive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/ur
+w/courier/ucrb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a
+.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texliv
+e/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/
+fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on manuscript.pdf (17 pages, 6644263 bytes).
+PDF statistics:
+ 1342 PDF objects out of 1440 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+

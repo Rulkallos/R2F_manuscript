@@ -1,0 +1,16 @@
+program	aflfast	aflplusplus	alfuzz	moptafl
+Time	R	T	R	T	R	T	R	T
+asn1	4	1	4	2	4	2	4	2
+asn1parse	1	0	1	0	1	0	1	0
+bignum	1	0	1	0	1	0	1	0
+client	7	1	7	1	7	1	7	1
+exif	5	3	5	3	5	3	5	3
+libpng_read_fuzzer	6	1	6	3	6	3	6	2
+libxml2_xml_read_memory_fuzzer	8	2	9	5	8	4	8	5
+server	6	2	6	1	6	1	6	2
+sndfile_fuzzer	8	2	8	7	8	7	8	7
+sqlite3_fuzz	10	3	13	5	14	4	11	3
+tiff_read_rgba_fuzzer	7	4	7	3	7	4	8	5
+tiffcp	6	4	9	7	11	7	9	5
+x509	5	1	5	0	5	0	5	1
+xmllint	7	2	7	2	7	2	8	3

@@ -1,0 +1,13 @@
+program	alfuzz	aflplusplus	aflfast	darwin	ecofuzz	mopt
+cflow	502	456	744	1099	282	693
+flvmeta	59	49	79	91	63	83
+imginfo	7	5	0	1	4	4
+infotocap	14	8	34	42	10	30
+jhead	6	3	7	19	13	12
+jq	0	0	0	0	0	0
+mp3gain	46	47	84	92	69	92
+mp42aac	27	28	230	202	156	204
+mujs	8	6	6	50	2	621
+pdftotext	102	118	123	169	22	142
+tcpdump	3	0	0	2	2	0
+tiffsplit	124	118	151	150	130	157

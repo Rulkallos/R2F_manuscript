@@ -1,0 +1,16 @@
+program	aflfast	aflplusplus	alfuzz	moptafl
+R	T	R	T	R	T	R	T
+asn1	4.0	1.0	4.0	1.9	4.0	2.0	4.0	1.2
+asn1parse	1.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0
+bignum	1.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0
+client	7.0	1.0	7.0	1.0	7.0	1.0	7.0	1.0
+exif	5.0	3.0	5.0	2.2	5.0	2.5	5.0	3.0
+libpng_read_fuzzer	6.0	1.0	6.0	2.3	6.0	3.0	6.0	1.7
+libxml2_xml_read_memory_fuzzer	8.0	1.3	8.1	4.0	8.0	2.8	8.0	2.9
+server	6.0	2.0	6.0	1.0	6.0	1.0	6.0	1.8
+sndfile_fuzzer	8.0	2.0	8.0	7.0	8.0	7.0	8.0	7.0
+sqlite3_fuzz	8.5	1.3	11.1	3.1	11.4	3.1	9.8	2.6
+tiff_read_rgba_fuzzer	5.4	2.5	5.8	3.0	5.7	3.1	6.7	3.8
+tiffcp	5.7	3.4	7.0	4.8	8.5	6.1	6.6	4.4
+x509	5.0	0.6	5.0	0.0	5.0	0.0	5.0	0.7
+xmllint	7.0	2.0	7.0	2.0	7.0	1.9	7.1	2.5

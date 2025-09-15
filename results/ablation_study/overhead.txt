@@ -1,0 +1,4 @@
+targets	aflplusplus	alfuzz_reward
+pdftotext	195.66199999999998	159.858
+infotocap	747.938	623.682
+tiffsplit	1268.5639999999999	860.6200000000001
