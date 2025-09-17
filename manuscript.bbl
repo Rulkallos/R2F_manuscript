@@ -23,7 +23,21 @@
 
 \bibitem{zhuFuzzingSurveyRoadmap2022}
 X.~Zhu, S.~Wen, S.~Camtepe, and Y.~Xiang, ``Fuzzing: A survey for roadmap,''
-  \emph{ACM Computing Surveys}, vol.~54, no. 11s, Sep. 2022.
+  \emph{ACM Computing Surveys}, vol.~54, no. 11s, pp. 1--36, Jan. 2022.
+
+\bibitem{huangBalanceSeedScheduling2023}
+H.~Huang, H.-C. Chiu, Q.~Shi, P.~Yao, and C.~Zhang, ``Balance seed scheduling
+  via monte carlo planning,'' \emph{IEEE Transactions on Dependable and Secure
+  Computing}, pp. 1--15, 2023.
+
+\bibitem{liDeepLearningCoverageguided2022}
+S.~Li, X.~Xie, Y.~Lin, Y.~Li, R.~Feng, X.~Li, W.~Ge, and J.~S. Dong, ``Deep
+  learning for coverage-guided fuzzing: How far are we?'' \emph{IEEE
+  Transactions on Dependable and Secure Computing}, pp. 1--13, 2022.
+
+\bibitem{boehmeFuzzingChallengesReflections2021}
+M.~Boehme, C.~Cadar, and A.~Roychoudhury, ``Fuzzing: Challenges and
+  reflections,'' \emph{IEEE Software}, vol.~38, no.~3, pp. 79--86, 2021.
 
 \bibitem{bohmeReliabilityCoveragebasedFuzzer2022}
 M.~B{\"o}hme, L.~Szekeres, and J.~Metzman, ``On the reliability of
@@ -32,29 +46,20 @@ M.~B{\"o}hme, L.~Szekeres, and J.~Metzman, ``On the reliability of
   1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association for Computing
   Machinery, 2022, pp. 1621--1633.
 
-\bibitem{fioraldiAFLCombiningIncremental2020}
-A.~Fioraldi, D.~Maier, H.~Ei{\ss}feldt, and M.~Heuse, ``{{AFL}}++ : Combining
-  incremental steps of fuzzing research,'' in \emph{14th {{Usenix Workshop}} on
-  {{Offensive Technologies}} (Woot 20)}.\hskip 1em plus 0.5em minus 0.4em\relax
-  USENIX Association, Aug. 2020.
-
-\bibitem{zhuRegressionGreyboxFuzzing2021}
-X.~Zhu and M.~B{\"o}hme, ``Regression greybox fuzzing,'' in \emph{{{CCS}} '21:
-  2021 {{ACM Sigsac Conference}} on {{Computer}} and {{Communications
-  Security}}, {{Virtual Event}}, {{Republic}} of {{Korea}}, {{November}} 15 -
-  19, 2021}, Y.~Kim, J.~Kim, G.~Vigna, and E.~Shi, Eds.\hskip 1em plus 0.5em
-  minus 0.4em\relax ACM, 2021, pp. 2169--2182.
-
-\bibitem{chenNovelCoverageguidedGreybox2023}
-J.~Chen, S.~Wang, S.~Cai, C.~Zhang, H.~Chen, J.~Chen, and J.~Zhang, ``A novel
-  coverage-guided greybox fuzzing based on power schedule optimization with
-  time complexity,'' in \emph{Proceedings of the 37th {{IEEE}}/{{ACM}}
-  International Conference on Automated Software Engineering}, ser. {{ASE}}
-  '22.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
-  for Computing Machinery, 2023.
-
 \bibitem{AmericanFuzzyLop}
 ``American fuzzy lop,'' https://lcamtuf.coredump.cx/afl/.
+
+\bibitem{bohmeCoveragebasedGreyboxFuzzing2019}
+M.~B{\"o}hme, V.-T. Pham, and A.~Roychoudhury, ``Coverage-based greybox fuzzing
+  as markov chain,'' \emph{IEEE Transactions on Software Engineering}, vol.~45,
+  no.~5, pp. 489--506, 2019.
+
+\bibitem{lyuMOPTOptimizedMutation2019}
+C.~Lyu, S.~Ji, C.~Zhang, Y.~Li, W.-H. Lee, Y.~Song, and R.~Beyah, ``{{MOPT}}:
+  Optimized mutation scheduling for fuzzers,'' in \emph{28th {{USENIX}}
+  Security Symposium, {{USENIX}} Security 2019, Santa Clara, {{CA}}, {{USA}},
+  August 14-16, 2019}, N.~Heninger and P.~Traynor, Eds.\hskip 1em plus 0.5em
+  minus 0.4em\relax USENIX Association, 2019, pp. 1949--1966.
 
 \bibitem{yueEcoFuzzAdaptiveEnergysaving2020}
 T.~Yue, P.~Wang, Y.~Tang, E.~Wang, B.~Yu, K.~Lu, and X.~Zhou, ``{{EcoFuzz}}:
@@ -64,37 +69,24 @@ T.~Yue, P.~Wang, Y.~Tang, E.~Wang, B.~Yu, K.~Lu, and X.~Zhou, ``{{EcoFuzz}}:
   Eds.\hskip 1em plus 0.5em minus 0.4em\relax USENIX Association, 2020, pp.
   2307--2324.
 
-\bibitem{wuOneFuzzingStrategy2022}
-M.~Wu, L.~Jiang, J.~Xiang, Y.~Huang, H.~Cui, L.~Zhang, and Y.~Zhang, ``One
-  fuzzing strategy to rule them all,'' in \emph{Proceedings of the 44th
-  {{International Conference}} on {{Software Engineering}}}, ser. {{ICSE}}
-  '22.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
-  for Computing Machinery, 2022, pp. 1634--1645.
-
-\bibitem{jauernigDARWINSurvivalFittest2023}
-P.~Jauernig, D.~Jakobovic, S.~Picek, E.~Stapf, and A.-R. Sadeghi, ``{{DARWIN}}:
-  Survival of the fittest fuzzing mutators,'' in \emph{30th {{Annual Network}}
-  and {{Distributed System Security Symposium}}, {{Ndss}} 2023, {{San Diego}},
-  {{California}}, {{Usa}}, {{February}} 27 - {{March}} 3, 2023}.\hskip 1em plus
-  0.5em minus 0.4em\relax The Internet Society, 2023.
-
-\bibitem{gaoFAFuzzNovelScheduling2024}
-Z.~Gao, H.~Xiong, W.~Dong, R.~Chang, R.~Yang, Y.~Zhou, and L.~Jiang,
-  ``{{FA-fuzz}}: A novel scheduling scheme using firefly algorithm for
-  mutation-based fuzzing,'' \emph{IEEE Transactions on Software Engineering},
-  vol.~50, no.~1, pp. 1--15, 2024.
-
-\bibitem{lyuMOPTOptimizedMutation2019}
-C.~Lyu, S.~Ji, C.~Zhang, Y.~Li, W.-H. Lee, Y.~Song, and R.~Beyah, ``{{MOPT}}:
-  Optimized mutation scheduling for fuzzers,'' in \emph{28th {{USENIX}}
-  Security Symposium, {{USENIX}} Security 2019, Santa Clara, {{CA}}, {{USA}},
-  August 14-16, 2019}, N.~Heninger and P.~Traynor, Eds.\hskip 1em plus 0.5em
-  minus 0.4em\relax USENIX Association, 2019, pp. 1949--1966.
+\bibitem{leeLearningSeedadaptiveMutation2023}
+M.~Lee, S.~Cha, and H.~Oh, ``Learning seed-adaptive mutation strategies for
+  greybox fuzzing,'' in \emph{2023 {{Ieee}}/Acm 45th {{International
+  Conference}} on {{Software Engineering}} (Icse)}, 2023, pp. 384--396.
 
 \bibitem{bottingerDeepReinforcementFuzzing2018}
 K.~B{\"o}ttinger, P.~Godefroid, and R.~Singh, ``Deep reinforcement fuzzing,''
   in \emph{2018 {{IEEE Security}} and {{Privacy Workshops}} (Spw)}, 2018, pp.
   116--122.
+
+\bibitem{binosiRainfuzzReinforcementlearningDriven2023}
+L.~Binosi, L.~Rullo, M.~Polino, M.~Carminati, and S.~Zanero, ``Rainfuzz:
+  {{Reinforcement-learning}} driven heat-maps for boosting coverage-guided
+  fuzzing,'' in \emph{Proceedings of the 12th International Conference on
+  Pattern Recognition Applications and Methods, {{ICPRAM}} 2023, Lisbon,
+  Portugal, February 22-24, 2023}, M.~D. Marsico, G.~S. {di Baja}, and A.~L.~N.
+  Fred, Eds.\hskip 1em plus 0.5em minus 0.4em\relax SCITEPRESS, 2023, pp.
+  39--50.
 
 \bibitem{gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022}
 K.~Gong, W.~Yang, B.~Cui, and C.~Chen, ``{{DRLFCfuzzer}}: Fuzzing with
@@ -121,36 +113,37 @@ R.~Liu, B.~Cui, C.~Chen, and J.~Ma, ``{{XRLFuzz}}: {{Fuzzing Binaries Guided}}
   0.5em minus 0.4em\relax {Springer Science and Business Media Deutschland
   GmbH}, 2024, vol. 193, pp. 307--317.
 
-\bibitem{binosiRainfuzzReinforcementlearningDriven2023}
-L.~Binosi, L.~Rullo, M.~Polino, M.~Carminati, and S.~Zanero, ``Rainfuzz:
-  {{Reinforcement-learning}} driven heat-maps for boosting coverage-guided
-  fuzzing,'' in \emph{Proceedings of the 12th International Conference on
-  Pattern Recognition Applications and Methods, {{ICPRAM}} 2023, Lisbon,
-  Portugal, February 22-24, 2023}, M.~D. Marsico, G.~S. {di Baja}, and A.~L.~N.
-  Fred, Eds.\hskip 1em plus 0.5em minus 0.4em\relax SCITEPRESS, 2023, pp.
-  39--50.
+\bibitem{zhaoSurveyRecentAdvancements2024}
+R.~Zhao, Y.~Li, Y.~Fan, F.~Gao, M.~Tsukada, and Z.~Gao, ``A survey on recent
+  advancements in autonomous driving using deep reinforcement learning:
+  {{Applications}}, challenges, and solutions,'' \emph{IEEE Transactions on
+  Intelligent Transportation Systems}, vol.~25, no.~12, pp. 19\,365--19\,398,
+  2024.
 
-\bibitem{liFirstLookEffect2021}
-S.~Li, Y.~Lin, X.~Xie, Y.~Li, X.~Li, W.~Ge, Y.~Liu, and J.~S. Dong, ``A first
-  look at the effect of deep learning in coverage-guided fuzzing,'' in
-  \emph{36th {{IEEE}}/{{ACM}} International Conference on Automated Software
-  Engineering, {{ASE}} 2021, Melbourne, Australia, November 15-19, 2021}.\hskip
-  1em plus 0.5em minus 0.4em\relax IEEE, 2021, pp. 1186--1189.
+\bibitem{tangDeepReinforcementLearning2025}
+C.~Tang, B.~Abbatematteo, J.~Hu, R.~Chandra, R.~{Mart{\'{\i}}n-Mart{\'{\i}}n},
+  and P.~Stone, ``Deep reinforcement learning for robotics: A survey of
+  real-world successes,'' in \emph{{{AAAI-25}}, {{Sponsored}} by the
+  {{Association}} for the {{Advancement}} of {{Artificial Intelligence}},
+  {{February}} 25 - {{March}} 4, 2025, {{Philadelphia}}, {{PA}}, {{USA}}},
+  T.~Walsh, J.~Shah, and Z.~Kolter, Eds.\hskip 1em plus 0.5em minus 0.4em\relax
+  AAAI Press, 2025, pp. 28\,698--28\,699.
 
-\bibitem{liDeepLearningCoverageguided2022}
-S.~Li, X.~Xie, Y.~Lin, Y.~Li, R.~Feng, X.~Li, W.~Ge, and J.~S. Dong, ``Deep
-  learning for coverage-guided fuzzing: How far are we?'' \emph{IEEE
-  Transactions on Dependable and Secure Computing}, pp. 1--13, 2022.
+\bibitem{silverMasteringChessShogi2017}
+D.~Silver, T.~Hubert, J.~Schrittwieser, I.~Antonoglou, M.~Lai, A.~Guez,
+  M.~Lanctot, L.~Sifre, D.~Kumaran, T.~Graepel, T.~Lillicrap, K.~Simonyan, and
+  D.~Hassabis, ``Mastering chess and shogi by self-play with a general
+  reinforcement learning algorithm,'' 2017.
+
+\bibitem{towersGymnasiumStandardInterface2024}
+M.~Towers, A.~Kwiatkowski, J.~Terry, J.~U. Balis, G.~De~Cola, T.~Deleu,
+  M.~Goul{\~a}o, A.~Kallinteris, M.~Krimmel, A.~Kg, and {Others}, ``Gymnasium:
+  A standard interface for reinforcement learning environments,'' \emph{Arxiv
+  Preprint Arxiv:2407.17032}, 2024.
 
 \bibitem{drozdFuzzerGymCompetitiveFramework2018}
 W.~Drozd and M.~D. Wagner, ``{{FuzzerGym}}: A competitive framework for fuzzing
   and learning,'' 2018.
-
-\bibitem{paduraruRiverFuzzRLOpensourceTool2021}
-C.~Paduraru, M.~Paduraru, and A.~Stefanescu, ``{{RiverFuzzRL}} - an open-source
-  tool to experiment with reinforcement learning for fuzzing,'' in \emph{2021
-  14th {{IEEE Conference}} on {{Software Testing}}, {{Verification}} and
-  {{Validation}} (Icst)}, 2021, pp. 430--435.
 
 \bibitem{liUNIFUZZHolisticPragmatic2021}
 Y.~Li, S.~Ji, Y.~Chen, S.~Liang, W.-H. Lee, Y.~Chen, C.~Lyu, C.~Wu, R.~Beyah,
@@ -198,10 +191,18 @@ T.~Haarnoja, A.~Zhou, P.~Abbeel, and S.~Levine, ``Soft actor-critic:
   Eds., vol.~80.\hskip 1em plus 0.5em minus 0.4em\relax PMLR, 2018, pp.
   1856--1865.
 
-\bibitem{bohmeCoveragebasedGreyboxFuzzing2019}
-M.~B{\"o}hme, V.-T. Pham, and A.~Roychoudhury, ``Coverage-based greybox fuzzing
-  as markov chain,'' \emph{IEEE Transactions on Software Engineering}, vol.~45,
-  no.~5, pp. 489--506, 2019.
+\bibitem{jauernigDARWINSurvivalFittest2023}
+P.~Jauernig, D.~Jakobovic, S.~Picek, E.~Stapf, and A.-R. Sadeghi, ``{{DARWIN}}:
+  Survival of the fittest fuzzing mutators,'' in \emph{30th {{Annual Network}}
+  and {{Distributed System Security Symposium}}, {{Ndss}} 2023, {{San Diego}},
+  {{California}}, {{Usa}}, {{February}} 27 - {{March}} 3, 2023}.\hskip 1em plus
+  0.5em minus 0.4em\relax The Internet Society, 2023.
+
+\bibitem{fioraldiAFLCombiningIncremental2020}
+A.~Fioraldi, D.~Maier, H.~Ei{\ss}feldt, and M.~Heuse, ``{{AFL}}++ : Combining
+  incremental steps of fuzzing research,'' in \emph{14th {{Usenix Workshop}} on
+  {{Offensive Technologies}} (Woot 20)}.\hskip 1em plus 0.5em minus 0.4em\relax
+  USENIX Association, Aug. 2020.
 
 \bibitem{dolan-gavittLAVALargescaleAutomated2016}
 B.~{Dolan-Gavitt}, P.~Hulin, E.~Kirda, T.~Leek, A.~Mambretti, W.~Robertson,
@@ -253,7 +254,7 @@ J.~Schrittwieser, I.~Antonoglou, T.~Hubert, K.~Simonyan, L.~Sifre, S.~Schmitt,
 
 \bibitem{aryaOSSfuzz2025}
 A.~Arya, O.~Chang, J.~Metzman, K.~Serebryany, and D.~Liu, ``{{OSS-fuzz}},''
-  Jan. 2025.
+  Sep. 2025.
 
 \bibitem{lemieuxFairFuzzTargetedMutation2018}
 C.~Lemieux and K.~Sen, ``{{FairFuzz}}: A targeted mutation strategy for
@@ -291,16 +292,6 @@ S.~Russell and P.~Norvig, \emph{Artificial Intelligence: {{A}} Modern Approach
 P.~E. Hart, N.~J. Nilsson, and B.~Raphael, ``A formal basis for the heuristic
   determination of minimum cost paths,'' \emph{IEEE Transactions on Systems
   Science and Cybernetics}, vol.~4, no.~2, pp. 100--107, 1968.
-
-\bibitem{huangBalanceSeedScheduling2023}
-H.~Huang, H.-C. Chiu, Q.~Shi, P.~Yao, and C.~Zhang, ``Balance seed scheduling
-  via monte carlo planning,'' \emph{IEEE Transactions on Dependable and Secure
-  Computing}, pp. 1--15, 2023.
-
-\bibitem{leeLearningSeedadaptiveMutation2023}
-M.~Lee, S.~Cha, and H.~Oh, ``Learning seed-adaptive mutation strategies for
-  greybox fuzzing,'' in \emph{2023 {{Ieee}}/Acm 45th {{International
-  Conference}} on {{Software Engineering}} (Icse)}, 2023, pp. 384--396.
 
 \bibitem{eomFuzzingJavaScriptInterpreters2024}
 J.~Eom, S.~Jeong, and T.~Kwon, ``Fuzzing {{JavaScript}} interpreters with

@@ -101,10 +101,11 @@ TLDR: GPTFuzzer is proposed, a practical and effective generation-based approach
 
 @misc{AmericanFuzzyLop,
   title = {American Fuzzy Lop},
-  urldate = {2025-04-13},
+  urldate = {2025-09-15},
   howpublished = {https://lcamtuf.coredump.cx/afl/},
+  langid = {english},
   keywords = {/unread},
-  file = {D\:\\data\\Zotero\\storage\\RH2QMRGK\\afl.html;D\:\\data\\Zotero\\storage\\USDEMYP6\\afl.html}
+  file = {D\:\\data\\Zotero\\storage\\JURMLIWQ\\afl.html;D\:\\data\\Zotero\\storage\\RH2QMRGK\\afl.html}
 }
 
 @article{amoueiRATReinforcementlearningdrivenAdaptive2022,
@@ -153,10 +154,11 @@ TLDR: Reinforcement-Learning-Driven and Adaptive Testing (RAT), an automated bla
   title = {{{OSS-fuzz}}},
   author = {Arya, Abhishek and Chang, Oliver and Metzman, Jonathan and Serebryany, Kostya and Liu, Dongge},
   year = {2025},
-  month = jan,
-  urldate = {2025-01-21},
+  month = sep,
+  urldate = {2025-09-04},
   abstract = {OSS-Fuzz - continuous fuzzing for open source software.},
-  copyright = {Apache-2.0}
+  copyright = {Apache-2.0},
+  keywords = {/unread}
 }
 
 @inproceedings{aschermannREDQUEENFuzzingInputtostate2019,
@@ -236,6 +238,23 @@ TLDR: The first approach in the literature that uses reinforcement learning for 
   file = {D:\data\Zotero\storage\6RZWIZ44\Binosi et al_2023_Rainfuzz.pdf}
 }
 
+@article{boehmeFuzzingChallengesReflections2021,
+  title = {Fuzzing: Challenges and Reflections},
+  author = {Boehme, Marcel and Cadar, Cristian and Roychoudhury, Abhik},
+  year = {2021},
+  journal = {IEEE Software},
+  volume = {38},
+  number = {3},
+  pages = {79--86},
+  doi = {10.1109/MS.2020.3016773},
+  langid = {english},
+  annotation = {83 citations (Crossref/DOI) [2025-02-27]\\
+GSCC: 0000187 \\
+TLDR: The open challenges and opportunities for fuzzing and symbolic execution as they emerged in discussions among researchers and practitioners in a Shonan Meeting and that were validated in a subsequent survey are summarized.\\
+remark: 模糊测试挑战与展望},
+  file = {D:\data\Zotero\storage\LC4FBBC2\Boehme et al. - 2021 - Fuzzing Challenges and reflections.pdf}
+}
+
 @inproceedings{bohmeBoostingFuzzerEfficiency2020,
   title = {Boosting Fuzzer Efficiency: {{An}} Information Theoretic Perspective},
   booktitle = {Proceedings of the 28th {{ACM}} Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
@@ -249,8 +268,8 @@ TLDR: The first approach in the literature that uses reinforcement learning for 
   abstract = {In this paper, we take the fundamental perspective of fuzzing as a learning process. Suppose before fuzzing, we know nothing about the behaviors of a program P: What does it do? Executing the first test input, we learn how P behaves for this input. Executing the next input, we either observe the same or discover a new behavior. As such, each execution reveals ''some amount'' of information about P's behaviors. A classic measure of information is Shannon's entropy. Measuring entropy allows us to quantify how much is learned from each generated test input about the behaviors of the program. Within a probabilistic model of fuzzing, we show how entropy also measures fuzzer efficiency. Specifically, it measures the general rate at which the fuzzer discovers new behaviors. Intuitively, efficient fuzzers maximize information. From this information theoretic perspective, we develop Entropic, an entropy-based power schedule for greybox fuzzing which assigns more energy to seeds that maximize information. We implemented Entropic into the popular greybox fuzzer LibFuzzer. Our experiments with more than 250 open-source programs (60 million LoC) demonstrate a substantially improved efficiency and confirm our hypothesis that an efficient fuzzer maximizes information. Entropic has been independently evaluated and invited for integration into main-line LibFuzzer. Entropic now runs on more than 25,000 machines fuzzing hundreds of security-critical software systems simultaneously and continuously.},
   isbn = {978-1-4503-7043-1},
   langid = {american},
-  keywords = {efficiency,Entropic,entropy,fuzzing,information theory,software testing,thesis (related work)},
-  annotation = {GSCC: 0000134 2025-02-27T04:08:29.318Z \\
+  keywords = {efficiency,Entropic,entropy,fuzzing,information,information theory,scheduling,software testing,thesis (related work)},
+  annotation = {GSCC: 0000142 2025-06-04T05:51:24.412Z \\
 TLDR: Entropic is developed, an entropy-based power schedule for greybox fuzzing which assigns more energy to seeds that maximize information and confirms the hypothesis that an efficient fuzzer maximizes information.\\
 remark: 基于信息熵提升模糊测试效率},
   file = {D:\data\Zotero\storage\9WTWWDNL\Böhme et al. - 2020 - Boosting fuzzer efficiency An information theoret.pdf}
@@ -267,7 +286,8 @@ remark: 基于信息熵提升模糊测试效率},
   doi = {10.1109/TSE.2017.2785841},
   langid = {english},
   keywords = {AFLFast,thesis (related work)},
-  annotation = {225 citations (Crossref/DOI) [2025-02-27]\\
+  annotation = {GSCC: 0001169 2025-06-04T05:51:26.740Z \\
+225 citations (Crossref/DOI) [2025-02-27]\\
 GSCC: 0001115 2025-02-27T04:08:35.469Z \\
 remark: 将覆盖引导模糊测试建模为马尔可夫链。},
   file = {D:\data\Zotero\storage\I42SV2A2\Böhme et al_2019_Coverage-based greybox fuzzing as markov chain2.pdf}
@@ -431,8 +451,9 @@ CCF: A},
   articleno = {172},
   isbn = {978-1-4503-9475-8},
   langid = {american},
-  keywords = {fuzzing,power schedule,software vulnerability,time complexity},
-  annotation = {1 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {fuzzing,information,power schedule,scheduling,software vulnerability,time complexity},
+  annotation = {GSCC: 0000002 2025-06-04T05:50:49.802Z \\
+1 citations (Crossref/DOI) [2025-02-27]\\
 0 citations (Crossref) [2024-03-31]\\
 GSCC: 0000002 \\
 TLDR: A novel fuzzing method which further uses code complexity to optimize power schedule process in AFL and AFLFAST (American Fuzzy Lop Fast) and the experimental results show that the proposed approach can trigger more crashes as well as improve the coverage discovery.\\
@@ -516,7 +537,8 @@ Read\_Status\_Date: 2025-02-09T07:22:22.072Z},
   booktitle = {Proceedings of the 38th International Conference on Machine Learning},
   author = {Cummins, Chris and Fisches, Zacharias V. and {Ben-Nun}, Tal and Hoefler, Torsten and O'Boyle, Michael F P and Leather, Hugh},
   editor = {Meila, Marina and Zhang, Tong},
-  year = {2021-07-18/2021-07-24},
+  year = {2021},
+  month = jul,
   series = {Proceedings of Machine Learning Research},
   volume = {139},
   pages = {2244--2253},
@@ -619,7 +641,8 @@ remark: 模糊测试错误处理代码},
   isbn = {979-8-4007-0050-7},
   keywords = {code coverage,fuzzing,structure-aware,vulnerability},
   annotation = {2 citations (Crossref/DOI) [2025-02-27]\\
-0 citations (Crossref) [2024-03-31]},
+0 citations (Crossref) [2024-03-31]\\
+TLDR: This work designs a novel data structure, namely Input Processing Tree, and a new cascading dependency-aware mutation strategy to drive the fuzzing of NestFuzz, which can universally and automatically model input format specifications and generate valid input.},
   file = {D:\data\Zotero\storage\BNRUX5GY\Deng et al_2023_NestFuzz.pdf}
 }
 
@@ -680,7 +703,7 @@ remark: 强化学习优化模糊测试},
   abstract = {Directed grey-box fuzzing (DGF) is a security testing technique that aims to steer the fuzzer towards predefined target sites in the program. To gain directedness, DGF prioritizes the seeds whose execution traces are closer to the target sites. Therefore, evaluating the distance between the execution trace of a seed and the target sites (aka, the seed distance) is important for DGF. The first directed grey-box fuzzer, AFLGo, uses an approach of calculating the basic block level distances during static analysis and accumulating the distances of the executed basic blocks to compute the seed distance. Following AFLGo, most of the existing state-of-the-art DGF techniques use all the basic blocks on the execution trace and only the control flow information for seed distance calculation. However, not every basic block is equally important and there are certain basic blocks where the execution trace starts to deviate from the target sites (aka, deviation basic blocks).In this paper, we propose a technique called WindRanger which leverages deviation basic blocks to facilitate DGF. To identify the deviation basic blocks, WindRanger applies both static reachability analysis and dynamic filtering. To conduct directed fuzzing, WindRanger uses the deviation basic blocks and their related data flow information for seed distance calculation, mutation, seed prioritization as well as explore-exploit scheduling. We evaluated WindRanger on 3 datasets consisting of 29 programs. The experiment results show that WindRanger outperforms AFLGo, AFL, and FairFuzz by reaching the target sites 21\%, 34\%, and 37\% faster and detecting the target crashes 44\%, 66\%, and 77\% faster respectively. Moreover, we found a 0-day vulnerability with a CVE ID assigned in ffmpeg (a popular multimedia library extensively fuzzed by OSS-fuzz) with WindRanger by supplying manually identified suspect locations as the target sites.},
   isbn = {978-1-4503-9221-1},
   langid = {american},
-  keywords = {directed testing,fuzz testing},
+  keywords = {directed testing,fuzz testing,fuzzing},
   annotation = {GSCC: 0000066 2025-03-02T06:55:22.255Z \\
 14 citations (Crossref) [2024-03-31]\\
 TLDR: Windranger is a directed fuzzing technique which leverages deviation basic blocks and their related data flow information for seed distance calculation, mutation, seed prioritization as well as explore-exploit scheduling.\\
@@ -711,9 +734,9 @@ Read\_Status\_Date: 2025-04-05T02:46:15.592Z},
   isbn = {979-8-4007-0612-7},
   langid = {american},
   keywords = {coverage,fuzzing,large language model,reinforcement learning},
-  annotation = {GSCC: 0000003 2025-03-02T09:07:38.509Z \\
-0 citations (Crossref/DOI) [2025-02-27]\\
-GSCC: 0000003 2025-03-02T09:07:38.509Z},
+  annotation = {0 citations (Crossref/DOI) [2025-02-27]\\
+GSCC: 0000003 2025-03-02T09:07:38.509Z \\
+TLDR: The evaluation results show that CovRL-Fuzz outperforms the state-of-the-art fuzzers in enhancing code coverage and identifying bugs in JavaScript interpreters: CovRL-Fuzz identified 58 real-world security-related bugs in the latest JavaScript interpreters, including 50 previously unknown bugs and 15 CVEs.},
   file = {D:\data\Zotero\storage\5JV8E6ZJ\Eom et al. - 2024 - Fuzzing JavaScript interpreters with coverage-guided reinforcement learning for LLM-based mutation.pdf}
 }
 
@@ -888,7 +911,9 @@ TLDR: A more thorough analysis about the time consumption in a fuzzing iteration
   pages = {679--696},
   doi = {10.1109/SP.2018.00040},
   langid = {english},
-  annotation = {234 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {fuzzing,information,scheduling},
+  annotation = {GSCC: 0000534 2025-06-04T05:51:31.397Z \\
+234 citations (Crossref/DOI) [2025-02-27]\\
 GSCC: 0000525 2025-02-27T04:08:37.582Z \\
 CCF: A\\
 TLDR: A coverage sensitive fuzzing solution that mitigates path collisions by providing more accurate coverage information, while still preserving low instrumentation overhead and armed with the three fuzzing strategies, CollAFL outperforms AFL in terms of both code coverage and vulnerability discovery.\\
@@ -1173,7 +1198,9 @@ CCF: A},
   journal = {IEEE Transactions on Dependable and Secure Computing},
   pages = {1--15},
   doi = {10.1109/TDSC.2023.3285293},
-  annotation = {0 citations (Crossref) [2024-03-31]\\
+  keywords = {BeliefFuzz,fuzzing,optimization,scheduling},
+  annotation = {GSCC: 0000008 2025-06-04T05:50:47.120Z \\
+0 citations (Crossref) [2024-03-31]\\
 GSCC: 0000008 \\
 TLDR: BeliefFuzz is presented, which transforms fuzzing into a Monte Carlo planning system with a upper confidence bound, and allows the system to dynamically compute both the benefits and the cost during the fuzzing process.\\
 remark: 蒙特卡洛规划的种子调度优化},
@@ -1459,12 +1486,15 @@ Read\_Status\_Date: 2025-04-05T03:15:06.604Z},
   doi = {10.1145/3510003.3510628},
   abstract = {Fuzz testing (fuzzing) allows developers to detect bugs and vulnerabilities in code by automatically generating defect-revealing inputs. Most fuzzers operate by generating inputs for applications and mutating the bytes of those inputs, guiding the fuzzing process with branch coverage feedback via instrumentation. Whitebox guidance (e.g., taint tracking or concolic execution) is sometimes integrated with coverage-guided fuzzing to help cover tricky-to-reach branches that are guarded by complex conditions (so-called "magic values"). This integration typically takes the form of a targeted input mutation, e.g., placing particular byte values at a specific offset of some input in order to cover a branch. However, these dynamic analysis techniques are not perfect in practice, which can result in the loss of important relationships between input bytes and branch predicates, thus reducing the effective power of the technique. We introduce a new, surprisingly simple, but effective technique, global hinting, which allows the fuzzer to insert these interesting bytes not only at a targeted position, but in any position of any input. We implemented this idea in Java, creating Confetti, which uses both targeted and global hints for fuzzing. In an empirical comparison with two baseline approaches, a state-of-the-art greybox Java fuzzer and a version of Confetti without global hinting, we found that Confetti covers more branches and finds 15 previously unreported bugs, including 9 that neither baseline could find. By conducting a post-mortem analysis of Confetti's execution, we determined that global hinting was at least as effective at revealing new coverage as traditional, targeted hinting.},
   isbn = {978-1-4503-9221-1},
-  annotation = {8 citations (Crossref) [2024-03-31]},
+  langid = {american},
+  keywords = {fuzzing},
+  annotation = {8 citations (Crossref) [2024-03-31]\\
+TLDR: This work introduces a new, surprisingly simple, but effective technique, global hinting, which allows the fuzzer to insert interesting bytes not only at a targeted position, but in any position of any input.},
   file = {D:\data\Zotero\storage\IHMYQPNN\Kukucka et al_2022_CONFETTI.pdf}
 }
 
 @inproceedings{laybournM2UsingMutation2022,
-  title = {{$M$}2: {{Using}} Mutation Analysis to Guide Mutation-Based Fuzzing},
+  title = {{$\mu$}2: {{Using}} Mutation Analysis to Guide Mutation-Based Fuzzing},
   booktitle = {Proceedings of the {{ACM}}/{{IEEE}} 44th International Conference on Software Engineering: {{Companion}} Proceedings},
   author = {Laybourn, Isabella},
   year = {2022},
@@ -1475,9 +1505,10 @@ Read\_Status\_Date: 2025-04-05T03:15:06.604Z},
   doi = {10.1145/3510454.3522682},
   abstract = {Coverage-guided fuzzing is a popular tool for finding bugs. This paper introduces {$\mu$}2, a strategy for extending coverage-guided fuzzing with mutation analysis, which previous work has found to be better correlated with test effectiveness than code coverage. {$\mu$}2 was implemented in Java using the JQF framework and the default mutations used by PIT. Initial evaluation shows increased performance when using {$\mu$}2 as compared to coverage-guided fuzzing.},
   isbn = {978-1-4503-9223-5},
-  keywords = {differential testing,mutation testing,mutation-based fuzzing},
+  keywords = {differential testing,fuzzing,mutation testing,mutation-based fuzzing},
   annotation = {1 citations (Crossref/DOI) [2025-02-27]\\
-1 citations (Crossref) [2024-03-31]},
+1 citations (Crossref) [2024-03-31]\\
+TLDR: Initial evaluation shows increased performance when using {$\mu$}2, a strategy for extending coverage-guided fuzzing with mutation analysis, which previous work has found to be better correlated with test effectiveness than code coverage.},
   file = {D:\data\Zotero\storage\5JYJP6ZR\Laybourn_2022_μ2.pdf}
 }
 
@@ -1544,6 +1575,7 @@ TLDR: This paper synthesizes a whole buggy program by encoding a sequence of mov
   pages = {384--396},
   doi = {10.1109/ICSE48619.2023.00043},
   langid = {english},
+  keywords = {fuzzing},
   annotation = {GSCC: 0000020 2025-02-27T04:15:11.236Z \\
 9 citations (Crossref/DOI) [2025-02-27]\\
 2 citations (Crossref) [2024-03-31]\\
@@ -1951,8 +1983,9 @@ Read\_Status\_Date: 2025-02-18T01:58:51.655Z},
   abstract = {The energy allocation strategy is one of the most popular techniques in fuzzing to improve code coverage and vulnerability discovery. The core intuition is that fuzzers should allocate more computational energy to the seed files that have high efficiency to trigger unique paths and crashes after mutation. Existing solutions usually define several properties, e.g., the execution speed, the file size, and the number of the triggered edges in the control flow graph, to serve as the key measurements in their allocation logics to estimate the potential of a seed. The efficiency of a property is usually assumed to be the same across different programs. However, we find that this assumption is not always valid. As a result, the state-of-the-art energy allocation solutions with static energy allocation logics are hard to achieve desirable performance on different programs. To address the above problem, we propose a novel program-sensitive solution, named SLIME, to enable adaptive energy allocation on the seed files with various properties for each program. Specifically, SLIME first designs multiple property-aware queues, with each queue containing the seed files with a specific property. Second, to improve the return of investment, SLIME leverages a customized Upper Confidence Bound Variance-aware (UCB-V) algorithm to statistically select a property queue with the most estimated reward, i.e., finding the most new unique execution paths and crashes. Finally, SLIME mutates the seed files in the selected property queue to perform property-adaptive fuzzing on a program. We evaluate SLIME against state-of-the-art open source fuzzers AFL, MOPT, AFL++, AFL++HIER, EcoFuzz, and TortoiseFuzz on 9 real-world programs. The results demonstrate that SLIME discovers 3.53X, 0.24X, 0.62X, 1.54X, 0.88X, and 3.81X more unique vulnerabilities compared to the above fuzzers, respectively. We will open source the prototype of SLIME to facilitate future fuzzing research.},
   isbn = {978-1-4503-9379-9},
   langid = {english},
-  keywords = {Data-driven technique,Fuzzing,thesis (related work),Vulnerability discovery},
-  annotation = {9 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {Data-driven technique,fuzzing,Fuzzing,information,scheduling,thesis (related work),Vulnerability discovery},
+  annotation = {GSCC: 0000023 2025-06-04T05:51:03.796Z \\
+9 citations (Crossref/DOI) [2025-02-27]\\
 5 citations (Crossref) [2024-03-31]\\
 GSCC: 0000022 \\
 TLDR: A novel program-sensitive solution, named SLIME, to enable adaptive energy allocation on the seed files with various properties for each program, and leverages a customized Upper Confidence Bound Variance-aware (UCB-V) algorithm to statistically select a property queue with the most estimated reward.\\
@@ -1968,7 +2001,9 @@ remark: 智能模糊测试能量分配策略},
   pages = {286--302},
   doi = {10.1109/EuroSP53844.2022.00026},
   langid = {english},
-  annotation = {12 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {fuzzing,information,scheduling},
+  annotation = {GSCC: 0000034 2025-06-04T05:51:01.951Z \\
+12 citations (Crossref/DOI) [2025-02-27]\\
 4 citations (Crossref) [2024-03-31]\\
 GSCC: 0000030 \\
 TLDR: DDFuzz is proposed, a new approach that rewards the fuzzer not only with code coverage information, but also when new edges in the data dependency graph are hit, showing that the adoption of data dependency instrumentation in coverage-guided fuzzing is a promising solution that can help to discover bugs that would otherwise remain unexplored by standard coverage approaches.\\
@@ -2048,7 +2083,8 @@ remark: HashFuzz提升崩溃检测效率},
   number = {6},
   pages = {2028--2039},
   doi = {10.1109/TSE.2020.3047766},
-  annotation = {9 citations (Crossref) [2024-03-31]},
+  annotation = {9 citations (Crossref) [2024-03-31]\\
+TLDR: The basic fuzz tools and testing scripts are updated and applied to a large collection of Unix utilities on Linux, FreeBSD, and MacOS and it is found that 9 crash or hang out of 74 utilities onLinux, 15 out of 78 utilities onBSD, and 12 out of 76 utilities on MacOS.},
   file = {D:\data\Zotero\storage\78WDCMQZ\Miller et al_2022_The relevance of classic fuzz testing.pdf}
 }
 
@@ -2101,7 +2137,7 @@ remark: 加速二进制模糊测试的覆盖追踪},
   abstract = {A popular metric to evaluate the performance of fuzzers is branch coverage. However, we argue that focusing solely on covering many different branches (i.e., the richness) is not sufficient since the majority of the covered branches may have been exercised only once, which does not inspire a high confidence in the reliability of the covered code. Instead, the distribution of the executed branches (i.e., the evenness) should also be considered. That is, behavioral diversity is only given if the generated inputs not only trigger many different branches, but also trigger them evenly often with diverse inputs. We introduce BeDivFuzz, a feedback-driven fuzzing technique for generator-based fuzzers. BeDivFuzz distinguishes between structure-preserving and structure-changing mutations in the space of syntactically valid inputs, and biases its mutation strategy towards validity and behavioral diversity based on the received program feedback. We have evaluated BeDivFuzz on Ant, Maven, Rhino, Closure, Nashorn, and Tomcat. The results show that BeDivFuzz achieves better behavioral diversity than the state of the art, measured by established biodiversity metrics, namely the Hill numbers, from the field of ecology.},
   isbn = {978-1-4503-9221-1},
   langid = {english},
-  keywords = {behavioral diversity,random testing,structure-aware fuzzing},
+  keywords = {behavioral diversity,fuzzing,random testing,structure-aware fuzzing},
   annotation = {22 citations (Crossref/DOI) [2025-02-27]\\
 13 citations (Crossref) [2024-03-31]\\
 GSCC: 0000038 \\
@@ -2224,7 +2260,8 @@ remark: 灰盒模糊测试的上下文赌博算法},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning},
   author = {Fedus, William and Ramachandran, Prajit and Agarwal, Rishabh and Bengio, Yoshua and Larochelle, Hugo and Rowland, Mark and Dabney, Will},
   editor = {III, Hal Daum{\'e} and Singh, Aarti},
-  year = {2020-07-13/2020-07-18},
+  year = {2020},
+  month = jul,
   series = {Proceedings of Machine Learning Research},
   volume = {119},
   pages = {3061--3071},
@@ -2348,7 +2385,8 @@ TLDR: A novel distance-based seed prioritization approach named DiPri is propose
   booktitle = {Proceedings of the 35th International Conference on Machine Learning},
   author = {Ruff, Lukas and Vandermeulen, Robert and Goernitz, Nico and Deecke, Lucas and Siddiqui, Shoaib Ahmed and Binder, Alexander and M{\"u}ller, Emmanuel and Kloft, Marius},
   editor = {Dy, Jennifer and Krause, Andreas},
-  year = {2018-07-10/2018-07-15},
+  year = {2018},
+  month = jul,
   series = {Proceedings of Machine Learning Research},
   volume = {80},
   pages = {4393--4402},
@@ -2502,8 +2540,9 @@ TLDR: Experimental results show that the proposed deep reinforcement learning-ba
   pages = {2194--2211},
   doi = {10.1109/SP46214.2022.9833761},
   langid = {english},
-  keywords = {K-scheduler,readed,thesis (related work)},
-  annotation = {27 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {fuzzing,information,K-scheduler,readed,scheduling,thesis (related work)},
+  annotation = {GSCC: 0000073 2025-06-04T05:50:59.831Z \\
+27 citations (Crossref/DOI) [2025-02-27]\\
 27 citations (Crossref/DOI) [2025-02-27]\\
 27 citations (Crossref/DOI) [2025-02-27]\\
 12 citations (Crossref) [2024-03-31]\\
@@ -2600,6 +2639,17 @@ CCF: A},
   annotation = {GSCC: 0000013 \\
 remark: 智能模糊测试基于输入格式逆向工程},
   file = {D:\data\Zotero\storage\B485HU5D\Shi et al_2023_ AIFORE .pdf}
+}
+
+@misc{silverMasteringChessShogi2017,
+  title = {Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm},
+  author = {Silver, David and Hubert, Thomas and Schrittwieser, Julian and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and Graepel, Thore and Lillicrap, Timothy and Simonyan, Karen and Hassabis, Demis},
+  year = {2017},
+  eprint = {1712.01815},
+  primaryclass = {cs.AI},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {/unread}
 }
 
 @article{silverMasteringGameGo2016,
@@ -2700,6 +2750,21 @@ Read\_Status\_Date: 2025-04-05T03:19:31.475Z},
   file = {D:\data\Zotero\storage\JUA8STW4\Sutton and Barto - 2018 - Reinforcement learning, second edition an introduction.pdf}
 }
 
+@inproceedings{tangDeepReinforcementLearning2025,
+  title = {Deep Reinforcement Learning for Robotics: A Survey of Real-World Successes},
+  booktitle = {{{AAAI-25}}, {{Sponsored}} by the {{Association}} for the {{Advancement}} of {{Artificial Intelligence}}, {{February}} 25 - {{March}} 4, 2025, {{Philadelphia}}, {{PA}}, {{USA}}},
+  author = {Tang, Chen and Abbatematteo, Ben and Hu, Jiaheng and Chandra, Rohan and {Mart{\'{\i}}n-Mart{\'{\i}}n}, Roberto and Stone, Peter},
+  editor = {Walsh, Toby and Shah, Julie and Kolter, Zico},
+  year = {2025},
+  pages = {28698--28699},
+  publisher = {AAAI Press},
+  doi = {10.1609/AAAI.V39I27.35095},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  langid = {english},
+  keywords = {/unread},
+  timestamp = {Fri, 27 Jun 2025 11:14:11 +0200}
+}
+
 @inproceedings{tapplerSearchbasedTestingReinforcement2022,
   title = {Search-Based Testing of Reinforcement Learning},
   booktitle = {Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence, {{IJCAI}} 2022, Vienna, Austria, 23-29 July 2022},
@@ -2714,6 +2779,17 @@ Read\_Status\_Date: 2025-04-05T03:19:31.475Z},
   annotation = {9 citations (Crossref) [2024-03-31]},
   timestamp = {Wed, 27 Jul 2022 16:43:00 +0200},
   file = {D:\data\Zotero\storage\BSRGF52J\Tappler et al. - 2022 - Search-based testing of reinforcement learning.pdf}
+}
+
+@article{towersGymnasiumStandardInterface2024,
+  title = {Gymnasium: A Standard Interface for Reinforcement Learning Environments},
+  author = {Towers, Mark and Kwiatkowski, Ariel and Terry, Jordan and Balis, John U and De Cola, Gianluca and Deleu, Tristan and Goul{\~a}o, Manuel and Kallinteris, Andreas and Krimmel, Markus and Kg, Arjun and {Others}},
+  year = {2024},
+  journal = {Arxiv Preprint Arxiv:2407.17032},
+  eprint = {2407.17032},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {/unread,No DOI found}
 }
 
 @article{venkatakeerthyIR2VecLLVMIR2020,
@@ -2774,8 +2850,8 @@ remark: "CMFuzz：一种基于上下文的自适应模糊测试方法。"},
   publisher = {The Internet Society},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   langid = {english},
-  keywords = {readed},
-  annotation = {GSCC: 0000146 2025-02-27T04:08:23.549Z \\
+  keywords = {fuzzing,information,readed,scheduling,TortoiseFuzz},
+  annotation = {GSCC: 0000156 2025-06-04T05:51:20.725Z \\
 CCF: A\\
 remark: {$<$}think{$>$}嗯，用户让我用不超过15个字的中文来概括这篇论文的主要内容。首先，我需要快速阅读摘要，找出核心观点。这篇论文的标题是``Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization''，摘要里提到现有的模糊测试工具平等对待所有覆盖的代码，导致效率低下。他们提出了一种叫做``覆盖度计量''的新方法，根据安全影响来评估覆盖，并开发了TortoiseFuzz工具。接下来，我需要确定关键词。现有的方法平等对待覆盖，而新方法根据安全影响区分不同的覆盖。重点在于覆盖度计量和输入优先级。用户给的例子，比如之前的``基于马尔可夫链的灰盒模糊测试优化''和``路径敏感的模糊测试优化''，都是突出方法的核心改进。要确保在15字以内，可能需要用``覆盖度计量的模糊测试优化''或者``基于安全影响的覆盖优化模糊测试''。不过用户强调要简短，可能需要更精炼。比如``覆盖度计量优先的模糊测试''或者``覆盖安全影响的模糊测试优化''。但可能需要更准确。再仔细看一下摘要，作者提出coverage accounting，通过三个指标来评估覆盖，并优先处理那些对安全影响更大的部分。所以核心是覆盖度计量和输入优先级调整。可能总结为``基于安全影响的覆盖度计量模糊测试优化''，但超过15字。需要简化，比如``覆盖度计量的模糊测试优化''或者``覆盖安全优先的模糊测试''。或者更简洁，``覆盖度计量优化模糊测试''。但可能用户希望突出输入优先级，所以``输入优先的覆盖度计量模糊测试''可能更准确，但字数可能不够。或者``覆盖度计量的输入优先模糊测试''，正好15字。或者更简洁，``覆盖度计量优化输入优先级''。不过需要更直接点出论文贡献。最后决定，用``覆盖度计量的模糊测试输入优化''或者``基于覆盖度计量的输入优先''。或者``覆盖安全优先的模糊测试优化''。可能用户给的例子中，之前有用``路径敏感''、``节能''等，所以这里的关键是覆盖度计量（Coverage Accounting）和输入优先级。最终，选择``覆盖度计量的输入优先模糊测试''可能刚好15字。不过需要检查字数，每个字算一个，标点不算。``覆盖度计量优化输入优先''是13字。或者``基于覆盖度计量的输入优先''14字。或者``覆盖度计量的输入优先级优化''15字。或者更自然一点：``覆盖度量优化输入优先级''14字。但可能用户需要更准确。或者参考原文的标题：``Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization''，可以翻译为``覆盖度量不均等的模糊测试输入优先''，但可能不够明确。可能最佳的是``覆盖度计量的输入优先模糊测试''15字。或者``覆盖度计量优化输入优先''13字，但不够完整。可能需要调整。最终，确定使用``覆盖度计量的输入优先模糊测试''正好15个字，准确概括了论文的核心：通过覆盖度计量来优化输入优先级，提升模糊测试效率。{$<$}/think{$>$}覆盖度计量的输入优先模糊测试},
   timestamp = {Mon, 01 Feb 2021 08:42:19 +0100},
@@ -2791,8 +2867,8 @@ remark: {$<$}think{$>$}嗯，用户让我用不超过15个字的中文来概括�
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl = {https://dblp.org/rec/conf/ndss/WangSY21.bib},
   langid = {english},
-  keywords = {AFL-Hier,thesis (related work)},
-  annotation = {GSCC: 0000091 2025-02-27T04:08:06.825Z \\
+  keywords = {AFL-Hier,fuzzing,optimization,scheduling,thesis (related work)},
+  annotation = {GSCC: 0000095 2025-06-04T05:51:10.527Z \\
 remark: {$<$}think{$>$}好的，我需要帮用户用不超过15字的中文概括一篇论文的摘要。这篇论文的题目是``基于强化学习的层次化种子调度用于灰盒模糊测试''。让我仔细看一下摘要内容。首先，论文提到现有的灰盒模糊测试工具在处理细粒度覆盖指标时，会遇到种子爆炸问题，导致调度效率低下。作者提出了使用多层次覆盖度量和基于强化学习的层次化调度器来解决这个问题。他们开发的原型在DARPA CGC和FuzzBench上都表现出色，比AFL等工具检测到更多漏洞，覆盖更高，速度更快。现在我要用简短的中文来概括这些内容。核心是介绍该研究的创新点和成果。关键词可能包括``强化学习''、``层次化调度''、``灰盒模糊测试''等。由于字数限制，需要精简。可能的表述：``强化学习的灰盒模糊测试种子调度'' 或者更具体一点：``基于强化学习的灰盒模糊测试优化''但根据论文重点，层次化调度是特色，应该体现出这一点。结合层次化调度和强化学习：层次化种子调度是核心，而强化学习是实现方法。比如：``灰盒模糊测试的强化学习层次调度''或者更简洁：``基于强化学习的层次化种子调度''这样既点出了方法（强化学习）和结构（层次化调度），也符合字数限制。用户之前的要求是``直接输出结果''，不需要解释，所以需要直接给出最准确的概括。检查字数，确保不超过15字。比如，``基于强化学习的层次化种子调度灰盒模糊测试''，可能有16字。需要调整。比如：``强化学习的灰盒模糊测试层次调度''共15字。确认这个短语是否准确传达了论文的主要内容。论文的主要贡献是使用强化学习进行层次化的种子调度，以提升测试效果。因此这样的表述应该是合适的。{$<$}/think{$>$}强化学习的灰盒模糊测试层次调度},
   timestamp = {Sat, 17 Dec 2022 01:15:30 +0100},
   file = {D:\data\Zotero\storage\Y9GYJRCS\Wang et al. - 2021 - Reinforcement learning-based hierarchical seed sch.pdf}
@@ -2859,6 +2935,7 @@ GSCC: 0000004 \\
   abstract = {Fuzzing nowadays has been commonly modeled as an optimization problem, e.g., maximizing code coverage under a given time budget via typical search-based solutions such as evolutionary algorithms. However, such solutions are widely argued to cause inefficient computing resource usage, i.e., inefficient mutations. To address this issue, two neural program-smoothing-based fuzzers, Neuzz and MTFuzz, have been recently proposed to approximate program branching behaviors via neural network models, which input byte sequences of a seed and output vectors representing program branching behaviors. Moreover, assuming that mutating the bytes with larger gradients can better explore branching behaviors, they develop strategies to mutate such bytes for generating new seeds as test cases. Meanwhile, although they have been shown to be effective in the original papers, they were only evaluated upon a limited dataset. In addition, it is still unclear how their key technical components and whether other factors can impact fuzzing performance. To further investigate neural program-smoothing-based fuzzing, we first construct a large-scale benchmark suite with a total of 28 popular open-source projects. Then, we extensively evaluate Neuzz and MTFuzz on such benchmarks. The evaluation results suggest that their edge coverage performance can be unstable. Moreover, neither neural network models nor mutation strategies can be consistently effective, and the power of their gradient-guidance mechanisms have been compromised. Inspired by such findings, we propose a simplistic technique, PreFuzz, which improves neural program-smoothing-based fuzzers with a resource-efficient edge selection mechanism to enhance their gradient guidance and a probabilistic byte selection mechanism to further boost mutation effectiveness. Our evaluation results indicate that PreFuzz can significantly increase the edge coverage of Neuzz/MTFuzz, and also reveal multiple practical guidelines to advance future research on neural program-smoothing-based fuzzing.},
   isbn = {978-1-4503-9221-1},
   langid = {english},
+  keywords = {fuzzing},
   annotation = {GSCC: 0000033 2025-03-02T09:07:26.950Z \\
 16 citations (Crossref/DOI) [2025-02-27]\\
 12 citations (Crossref) [2024-03-31]\\
@@ -2904,7 +2981,7 @@ TLDR: The mechanism for runtime fuzzer guidance, where the fuzzed code is instru
   abstract = {Coverage-guided fuzzing has become mainstream in fuzzing to automatically expose program vulnerabilities. Recently, a group of fuzzers are proposed to adopt a random search mechanism namely Havoc, explicitly or implicitly, to augment their edge exploration. However, they only tend to adopt the default setup of Havoc as an implementation option while none of them attempts to explore its power under diverse setups or inspect its rationale for potential improvement. In this paper, to address such issues, we conduct the first empirical study on Havoc to enhance the understanding of its characteristics. Specifically, we first find that applying the default setup of Havoc to fuzzers can significantly improve their edge coverage performance. Interestingly, we further observe that even simply executing Havoc itself without appending it to any fuzzer can lead to strong edge coverage performance and outperform most of our studied fuzzers. Moreover, we also extend the execution time of Havoc and find that most fuzzers can not only achieve significantly higher edge coverage, but also tend to perform similarly (i.e., their performance gaps get largely bridged). Inspired by the findings, we further propose HavocMAB, which models the Havoc mutation strategy as a multi-armed bandit problem to be solved by dynamically adjusting the mutation strategy. The evaluation result presents that HavocMAB can significantly increase the edge coverage by 11.1\% on average for all the benchmark projects compared with Havoc and even slightly outperform state-of-the-art QSYM which augments its computing resource by adopting three parallel threads. We further execute HavocMAB with three parallel threads and result in 9\% higher average edge coverage over QSYM upon all the benchmark projects.},
   isbn = {978-1-4503-9221-1},
   langid = {english},
-  keywords = {thesis (related work)},
+  keywords = {fuzzing,thesis (related work)},
   annotation = {GSCC: 0000083 2025-02-27T04:15:13.777Z \\
 45 citations (Crossref/DOI) [2025-02-27]\\
 23 citations (Crossref) [2024-03-31]\\
@@ -2929,7 +3006,7 @@ remark: HavocMAB提升模糊测试边缘覆盖率},
   articleno = {126},
   isbn = {979-8-4007-0217-4},
   langid = {english},
-  keywords = {thesis (related work)},
+  keywords = {fuzzing,thesis (related work)},
   annotation = {GSCC: 0000116 2025-02-27T04:13:10.226Z \\
 27 citations (Crossref/DOI) [2025-02-27]\\
 GSCC: 0000116 \\
@@ -2938,23 +3015,25 @@ TLDR: The evaluation shows that universal fuzzing achieves higher coverage than 
 }
 
 @article{xuGraphuzzDatadrivenSeed2024,
-  title = {Graphuzz: {{Data-driven}} Seed Scheduling for Coverage-Guided Greybox Fuzzing},
+  title = {Graphuzz: Data-Driven Seed Scheduling for Coverage-Guided Greybox Fuzzing},
   author = {Xu, Hang and Chen, Liheng and Gan, Shuitao and Zhang, Chao and Li, Zheming and Ji, Jiangan and Chen, Baojian and Hu, Fan},
   year = {2024},
-  month = aug,
-  journal = {ACM Trans. Softw. Eng. Methodol.},
+  month = sep,
+  journal = {ACM Transactions on Software Engineering and Methodology},
   volume = {33},
   number = {7},
+  pages = {1--36},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
-  issn = {1049-331X},
+  issn = {1049-331X, 1557-7392},
   doi = {10.1145/3664603},
-  abstract = {Seed scheduling is a critical step of greybox fuzzing, which assigns different weights to seed test cases during seed selection, and significantly impacts the efficiency of fuzzing. Existing seed scheduling strategies rely on manually designed models to estimate the potentials of seeds and determine their weights, which fails to capture the rich information of a seed and its execution and thus the estimation of seeds' potentials is not optimal. In this article, we introduce a new seed scheduling solution, Graphuzz, for coverage-guided greybox fuzzing, which utilizes deep learning models to estimate the potentials of seeds and works in a data-driven way. Specifically, we propose an extended control flow graph called e-CFG to represent the control-flow and data-flow features of a seed's execution, which is suitable for graph neural networks (GNN) to process and estimate seeds' potential. We evaluate each seed's code coverage increment and use it as the label to train the GNN model. Further, we propose a self-attention mechanism to enhance the GNN model so that it can capture overlooked features. We have implemented a prototype of Graphuzz based on the baseline fuzzer AFLplusplus. The evaluation results show that our model can estimate the potential of seeds and has the robust capability to generalize to different targets. Furthermore, the evaluation using 12 benchmarks from FuzzBench shows that Graphuzz outperforms AFLplusplus and the state-of-the-art seed scheduling solution K-Scheduler and other coverage-guided fuzzers in terms of code coverage, and the evaluation using 8 benchmarks from Magma shows that Graphuzz outperforms the baseline fuzzer AFLplusplus and SOTA solutions in terms of bug detection.},
+  abstract = {Seed scheduling is a critical step of greybox fuzzing, which assigns different weights to seed test cases during seed selection, and significantly impacts the efficiency of fuzzing. Existing seed scheduling strategies rely on manually designed models to estimate the               potentials               of seeds and determine their weights, which fails to capture the rich information of a seed and its execution and thus the estimation of seeds' potentials is not optimal. In this article, we introduce a new seed scheduling solution, Graphuzz, for coverage-guided greybox fuzzing, which utilizes deep learning models to estimate the potentials of seeds and works in a data-driven way. Specifically, we propose an extended control flow graph called e-CFG to represent the control-flow and data-flow features of a seed's execution, which is suitable for graph neural networks (GNN) to process and estimate seeds' potential. We evaluate each seed's code coverage increment and use it as the label to train the GNN model. Further, we propose a self-attention mechanism to enhance the GNN model so that it can capture overlooked features. We have implemented a prototype of Graphuzz based on the baseline fuzzer AFLplusplus. The evaluation results show that our model can estimate the potential of seeds and has the robust capability to generalize to different targets. Furthermore, the evaluation using 12 benchmarks from FuzzBench shows that Graphuzz outperforms AFLplusplus and the state-of-the-art seed scheduling solution K-Scheduler and other coverage-guided fuzzers in terms of code coverage, and the evaluation using 8 benchmarks from Magma shows that Graphuzz outperforms the baseline fuzzer AFLplusplus and SOTA solutions in terms of bug detection.},
   articleno = {185},
   issue_date = {September 2024},
-  langid = {american},
-  keywords = {/UR,Fuzzing,graph neural network,NN based fuzzing,seed scheduling},
-  annotation = {0 citations (Crossref/DOI) [2025-02-27]\\
+  langid = {english},
+  keywords = {/UR,fuzzing,Fuzzing,graph neural network,information,NN based fuzzing,scheduling,seed scheduling},
+  annotation = {GSCC: 0000002 2025-06-04T05:50:29.828Z \\
+0 citations (Crossref/DOI) [2025-02-27]\\
 GSCC: 0000001 2025-04-25T02:35:18.078Z \\
 TLDR: A new seed scheduling solution, Graphuzz, for coverage-guided greybox fuzzing, which utilizes deep learning models to estimate the potentials of seeds and works in a data-driven way and has the robust capability to generalize to different targets.\\
 remark: 基于深度学习的种子调度技术},
@@ -2984,8 +3063,8 @@ remark: 基于深度学习的种子调度技术},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl = {https://dblp.org/rec/conf/uss/YueWTWYLZ20.bib},
   langid = {english},
-  keywords = {thesis (related work)},
-  annotation = {GSCC: 0000174 2025-02-27T04:08:18.392Z \\
+  keywords = {fuzzing,optimization,scheduling,thesis (related work)},
+  annotation = {GSCC: 0000188 2025-06-04T05:51:16.978Z \\
 remark: {$<$}think{$>$}好的，我需要用不超过15个中文汉字来概括论文``EcoFuzz: adaptive energy-saving greybox fuzzing as a variant of the adversarial multi-armed bandit''的主要内容。首先，看标题，EcoFuzz是一种自适应节能的灰盒模糊测试方法，作为对抗性多臂老虎机的变体。论文的关键点在于结合了节能（energy-saving）和自适应（adaptive），并且应用了多臂老虎机模型。灰盒模糊测试通常关注代码覆盖率和漏洞发现效率，而这里引入了节能的概念，可能是在资源分配或测试策略上优化，减少能耗。对抗性多臂老虎机可能用于处理动态变化的环境或不确定因素，帮助选择最优的测试策略。可能的概括方向包括：节能的模糊测试方法、基于多臂老虎机的自适应测试、节能自适应灰盒测试等。需要确保不超过15字，同时准确反映核心内容。考虑到``自适应节能''和``对抗性多臂老虎机''是核心，但``对抗性多臂老虎机''较长，可能需要简化。例如，可以简化为``多臂老虎机模型''或``自适应多臂策略''。最终可能需要将重点放在节能和自适应的灰盒测试上，结合多臂老虎机的方法。可能的概括是：基于多臂老虎机的自适应节能模糊测试。或者更简洁的：自适应节能灰盒模糊测试。但需要确保涵盖关键点，同时符合字数限制。再检查标题中的``variant of the adversarial multi-armed bandit''，这里``adversarial''指对抗性环境，可能是指测试过程中遇到的动态挑战，所以可能需要保留对抗性的概念，但中文中可能需要简化。例如，可以翻译为``对抗多臂老虎机变体''，但字数可能过多。可能更合适的概括是结合自适应节能和多臂模型，比如``自适应节能的灰盒模糊测试方法''或者``基于对抗多臂老虎机的节能模糊测试''。考虑到15字限制，``自适应节能灰盒模糊测试''已经用了11字，还可以加入``多臂''或``对抗''的元素，但可能需要简略。例如，``节能自适应灰盒测试''加上``多臂''可能超过，所以可能需要更精炼的表达。最终，可能需要选择最核心的要素：节能、自适应、灰盒测试、多臂老虎机。其中，EcoFuzz的主要贡献是节能和自适应策略，基于多臂老虎机模型。因此，概括为``基于多臂老虎机的节能自适应模糊测试''可能更准确，但检查字数是否在15字以内。``基于多臂老虎机的节能自适应模糊测试''共17字，超了。需要缩短，比如``多臂老虎机节能自适应模糊测试''15字，或者``节能自适应的多臂模糊测试''13字。不过后者可能不够明确。另一种方式，可能将重点放在节能和自适应，而多臂老虎机作为方法，但可能无法在15字内全部体现。例如，``节能自适应灰盒模糊测试''12字，但缺少了多臂老虎机的部分。不过，原论文的标题已经将多臂老虎机作为变体，可能在内容中是多臂策略的应用，但概括时可以强调节能和自适应。因此，可能最优的是``自适应节能灰盒模糊测试''13字，或者``基于多臂的节能模糊测试''13字，但后者可能不够准确。再考虑论文摘要可能提到的内容，如自适应能量节省、作为对抗性多臂老虎机的变体，可能更准确的概括是结合这两个方面。因此，可能选择``基于对抗多臂的节能模糊测试''15字，或者``对抗多臂节能自适应模糊测试''15字，不过``对抗''可能可以省略，因为多臂老虎机本身可能包含对抗性。所以最终可能定为``多臂老虎机节能自适应模糊测试''15字。或者更简洁的``节能自适应的多臂模糊测试''13字。但需要确认是否准确。根据标题，EcoFuzz是作为对抗性多臂老虎机的变体，所以可能必须提到对抗性或多臂。可能最佳选择是``基于多臂老虎机的节能模糊测试''15字，刚好15字，涵盖了关键要素：多臂老虎机作为方法，节能作为目标，模糊测试为类型。因此，最终决定使用这个概括。{$<$}/think{$>$}基于多臂老虎机的节能模糊测试},
   timestamp = {Sun, 30 Apr 2023 12:18:07 +0200},
   file = {D:\data\Zotero\storage\3LUWWEQ9\Yue et al. - 2020 - EcoFuzz Adaptive energy-saving greybox fuzzing as.pdf}
@@ -3128,8 +3207,9 @@ Read\_Status\_Date: 2025-02-24T02:39:23.173Z},
   abstract = {Coverage-based greybox fuzzing (CGF) has been approved to be effective in finding security vulnerabilities. Seed scheduling, the process of selecting an input as the seed from the seed pool for the next fuzzing iteration, plays a central role in CGF. Although numerous seed scheduling strategies have been proposed, most of them treat these seeds independently and do not explicitly consider the relationships among seeds. In this study, we make a key observation that the relationships among seeds are valuable for seed scheduling. We design and propose a ``seed mutation tree'' by investigating and leveraging the mutation relationships among seeds. With the ``seed mutation tree'', we further model the seed scheduling problem as a Monte-Carlo Tree Search (MCTS) problem. That is, we select the next seed for fuzzing by walking this ``seed mutation tree'' through an optimal path, based on the estimation of MCTS. We implement two prototypes, Alphuzz on top of AFL and Alphuzz++ on top of AFL++. The evaluation results on three datasets (the UniFuzz dataset, the CGC binaries, and 12 real-world binaries) show that Alphuzz and Alphuzz++ outperform state-of-the-art fuzzers with higher code coverage and more discovered vulnerabilities. In particular, Alphuzz discovers 3 new vulnerabilities with CVEs.},
   isbn = {978-1-4503-9759-9},
   langid = {english},
-  keywords = {Fuzzing,Seed scheduling strategy,thesis (related work),Vulnerability detection},
-  annotation = {6 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {fuzzing,Fuzzing,optimization,scheduling,Seed scheduling strategy,thesis (related work),Vulnerability detection},
+  annotation = {GSCC: 0000012 2025-06-04T05:50:55.846Z \\
+6 citations (Crossref/DOI) [2025-02-27]\\
 2 citations (Crossref) [2024-03-31]\\
 GSCC: 0000011 \\
 TLDR: This study design and propose a ``seed mutation tree'' by investigating and leveraging the mutation relationships among seeds, and model the seed scheduling problem as a Monte-Carlo Tree Search (MCTS) problem.\\
@@ -3153,6 +3233,19 @@ GSCC: 0000009},
   file = {D:\data\Zotero\storage\TUJZBTP9\Zhao et al_2022_Probabilistic path prioritization for hybrid fuzzing.pdf}
 }
 
+@article{zhaoSurveyRecentAdvancements2024,
+  title = {A Survey on Recent Advancements in Autonomous Driving Using Deep Reinforcement Learning: {{Applications}}, Challenges, and Solutions},
+  author = {Zhao, Rui and Li, Yun and Fan, Yuze and Gao, Fei and Tsukada, Manabu and Gao, Zhenhai},
+  year = {2024},
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume = {25},
+  number = {12},
+  pages = {19365--19398},
+  doi = {10.1109/TITS.2024.3452480},
+  keywords = {/unread,autonomous driving,Autonomous driving,Autonomous vehicles,continuous learning,Decision making,Deep reinforcement learning,imitation learning,Motion control,Planning,review,Surveys,Vehicle dynamics},
+  annotation = {TLDR: This paper analyzes the multi-level AD task characteristics and delves deeply into the current DRL methodologies primarily employed in AD, identifying six modes of DRL model integration into an AD architecture that span the entire spectrum of AD policy processes.}
+}
+
 @article{zhaoTightlycoupledHybridFuzzing2024,
   title = {Towards Tightly-Coupled Hybrid Fuzzing via Excavating Input Specifications},
   author = {Zhao, Yiru and Gao, Long and Wei, Qiang and Zhao, Lei},
@@ -3160,10 +3253,12 @@ GSCC: 0000009},
   journal = {IEEE Transactions on Dependable and Secure Computing},
   pages = {1--14},
   doi = {10.1109/TDSC.2024.3361008},
+  langid = {american},
   keywords = {Codes,Computer bugs,Concolic execution,Excavation,fuzzing,Fuzzing,hybrid fuzzing,Hybrid power systems,Prototypes,Semantics,software security},
   annotation = {1 citations (Crossref/DOI) [2025-02-27]\\
+0 citations (Crossref) [2024-03-31]\\
 GSCC: 0000002 \\
-0 citations (Crossref) [2024-03-31]},
+TLDR: Experimental results show that Gear-Driller, Gear-DigFuzz and Gear-QSYM outperform Driller, DigFuzz and QSYM with larger code coverage, more discovered vulnerabilities, and higher efficiency in finding vulnerabilities.},
   file = {D:\data\Zotero\storage\Z72F3PS3\Zhao et al_2024_Towards tightly-coupled hybrid fuzzing via excavating input specifications.pdf}
 }
 
@@ -3226,7 +3321,9 @@ remark: "ATTUZZ：通过深度学习和程序分析实现高效的模糊测试�
   number = {2},
   pages = {912--923},
   doi = {10.1109/TDSC.2020.3008826},
-  annotation = {6 citations (Crossref) [2024-03-31]},
+  langid = {american},
+  annotation = {6 citations (Crossref) [2024-03-31]\\
+TLDR: The proposed CSI-Fuzz, a fuzzer utilizing coverage sensitive instrumentation to address the problems of existing full-speed fuzzing, discovers more edges than AFL, AFLFast, and UnTracer and exposes more bugs than the other fuzzers.},
   file = {D:\data\Zotero\storage\KRN2AIQ3\Zhu et al_2022_CSI-Fuzz.pdf}
 }
 
@@ -3234,13 +3331,14 @@ remark: "ATTUZZ：通过深度学习和程序分析实现高效的模糊测试�
   title = {Fuzzing: A Survey for Roadmap},
   author = {Zhu, Xiaogang and Wen, Sheng and Camtepe, Seyit and Xiang, Yang},
   year = {2022},
-  month = sep,
+  month = jan,
   journal = {ACM Computing Surveys},
   volume = {54},
   number = {11s},
+  pages = {1--36},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
-  issn = {0360-0300},
+  issn = {0360-0300, 1557-7341},
   doi = {10.1145/3512345},
   abstract = {Fuzz testing (fuzzing) has witnessed its prosperity in detecting security flaws recently. It generates a large number of test cases and monitors the executions for defects. Fuzzing has detected thousands of bugs and vulnerabilities in various applications. Although effective, there lacks systematic analysis of gaps faced by fuzzing. As a technique of defect detection, fuzzing is required to narrow down the gaps between the entire input space and the defect space. Without limitation on the generated inputs, the input space is infinite. However, defects are sparse in an application, which indicates that the defect space is much smaller than the entire input space. Besides, because fuzzing generates numerous test cases to repeatedly examine targets, it requires fuzzing to perform in an automatic manner. Due to the complexity of applications and defects, it is challenging to automatize the execution of diverse applications. In this article, we systematically review and analyze the gaps as well as their solutions, considering both breadth and depth. This survey can be a roadmap for both beginners and advanced developers to better understand fuzzing.},
   articleno = {230},
@@ -3267,7 +3365,9 @@ remark: 模糊测试的差距与解决方案综述},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl = {https://dblp.org/rec/conf/ccs/ZhuB21.bib},
   langid = {english},
-  annotation = {47 citations (Crossref/DOI) [2025-02-27]\\
+  keywords = {fuzzing,information,scheduling},
+  annotation = {GSCC: 0000101 2025-06-04T05:51:07.779Z \\
+47 citations (Crossref/DOI) [2025-02-27]\\
 GSCC: 0000088 2025-02-27T04:08:30.499Z \\
 remark: {$<$}think{$>$}好的，我现在要帮用户用一句话概括这篇论文的主要内容，而且不能超过15个字，用中文。首先，我需要仔细看一下用户提供的摘要。这篇论文的题目是``Regression Greybox Fuzzing''，看起来是关于回归测试的灰盒模糊测试。摘要里提到，他们在OSSFuzz中发现77\%的bug是回归问题，也就是由最近的代码变更引入的。作者提出了回归灰盒模糊测试（RGF），专注于最近或更频繁改变的代码。他们通过调整种子字节的能量分配，并引入蚁群优化算法来优先处理可能生成更有趣输入的字节。实验部分涉及大量CPU年的模糊测试和20个真实漏洞的发现。用户之前给出的例子都是各种模糊测试的优化方法，比如基于马尔可夫链、路径敏感、节能、覆盖度计量、强化学习调度等。所以这篇的核心应该是针对回归问题的灰盒模糊测试优化。关键点在于``回归测试''和``灰盒模糊测试''。需要把这两个点浓缩成一句话。可能的选项有：``回归导向的灰盒模糊测试''或者``针对回归漏洞的灰盒模糊测试优化''。但用户要求不超过15字，所以需要更简练。``回归灰盒模糊测试优化''这样可能刚好，或者``针对回归的灰盒模糊测试''。不过可能需要更准确一些，因为论文提出的是专门处理回归问题的方法。另外，论文中提到使用蚁群优化和能量调度，但用户可能更关注核心贡献，即回归测试的优化。所以最终概括应该是：``回归导向的灰盒模糊测试''或者``回归灰盒模糊测试优化''。检查字数，前者是11字，后者是12字，都符合要求。根据论文标题和内容，可能选前者，但摘要中更强调对回归问题的处理，所以可能用``回归灰盒模糊测试优化''更准确。{$<$}/think{$>$}回归灰盒模糊测试优化\\
 Read\_Status: Only AI-summary\\
@@ -3304,6 +3404,9 @@ remark: 深度学习优化模糊测试输入筛选},
   publisher = {USENIX Association},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl = {https://dblp.org/rec/conf/uss/ZouLCZQ22.bib},
+  langid = {american},
+  annotation = {Read\_Status: Read\\
+Read\_Status\_Date: 2025-08-25T05:24:10.809Z},
   timestamp = {Tue, 03 Jan 2023 13:35:47 +0100},
   file = {D:\data\Zotero\storage\ZSH3VGIX\Zou et al. - 2022 - SyzScope Revealing high-risk security impacts of .pdf}
 }
