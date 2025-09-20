@@ -68,171 +68,140 @@
 Article submission, IEEE, IEEEtran, journal, \LaTeX, paper, template, typesetting.
 \end{IEEEkeywords}
 
-\clearpage
 \section{Introduction}
 
 Coverage-guided fuzzing (CGF) is one of the most widely used techniques for vulnerability discovery in practice \cite{zhuFuzzingSurveyRoadmap2022,huangBalanceSeedScheduling2023,liDeepLearningCoverageguided2022,boehmeFuzzingChallengesReflections2021}. Its primary objective is to maximize code coverage during execution, thereby ensuring that a broad range of execution paths are explored. Prior work has shown that higher coverage is positively correlated with the likelihood of discovering bugs \cite{bohmeReliabilityCoveragebasedFuzzer2022}. Consequently, CGF can be formulated as an optimization problem in which the objective function is to maximize code coverage within a given testing time.
 
-%One direction of fuzzing optimization is to adapt the fuzzing strategy to the current fuzzing state in order to enhance effectiveness. Numerous studies have explored heuristic-based methods for this purpose. For example, AFL~\cite{AmericanFuzzyLop} prioritizes the execution of seeds considered favored. However, heuristic-based fuzzing optimizations have several limitations. First, heuristics are essentially search methods that focus on finding feasible solutions without guaranteeing optimality. In fuzzing, this means they cannot ensure the highest possible reward for a given fuzzing state, thereby constraining effectiveness. Second, heuristic methods often rely on exhaustive search, which incurs additional time and resource costs, potentially reducing efficiency. For instance, MOPT~\cite{lyuMOPTOptimizedMutation2019} employs a pilot fuzzing procedure to estimate the utility of each mutator using its swarm intelligence algorithm, which introduces extra overhead.
-%
-%With the advancement of reinforcement learning (RL) techniques, numerous studies have explored their application to coverage-guided fuzzing (CGF). RL-based fuzzing typically models the problem as a Markov Decision Process (MDP) and learns from past experience to derive an optimal policy for a given state. Based on Bellman optimality, RL can guarantee policy optimality after sufficient training. Moreover, by leveraging past experience, RL reduces unnecessary exploration and thereby decreases the cost of the search process. RL-based fuzzing can be broadly categorized into multi-armed bandit (MAB)-based and deep reinforcement learning (DRL)-based approaches. MAB-based fuzzing models the optimization problem as a bandit setting and applies bandit algorithms for decision-making. In contrast, DRL-based fuzzing employs neural networks (NNs) to model fuzzing states and predict optimal policies through learning. Owing to the fitting capacity of NNs, DRL-based approaches provide stronger modeling and prediction capabilities compared to the linear modeling used in MAB-based methods, thereby offering greater potential for improving fuzzing performance. Several studies~\cite{gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022,jeonDrPathFinderHybrid2022,liangRLFDirectedFuzzing2022,liuXRLFuzzFuzzingBinaries2024} have demonstrated the feasibility of RL for fuzzing optimization through proof-of-concept experiments.
-
-One direction of fuzzing optimization is to adapt the fuzzing strategy to the current fuzzing state in order to enhance effectiveness. Numerous studies have explored heuristic-based methods for this purpose. For example, AFL~\cite{AmericanFuzzyLop} prioritizes the execution of seeds considered favored, while AFLFast~\cite{bohmeCoveragebasedGreyboxFuzzing2019} models the fuzzing process as a Markov chain and schedules seeds based on the rarity of the paths visited. Similarly, MOPT~\cite{lyuMOPTOptimizedMutation2019} formulates fuzzing optimization as a mutator scheduling problem and employs a swarm intelligence algorithm to determine the optimal probability distribution of mutators, thereby improving performance. However, heuristic-based fuzzing optimizations have several limitations. First, heuristics are essentially search methods that focus on finding feasible solutions without guaranteeing optimality. In fuzzing, this means they cannot ensure the highest possible reward for a given fuzzing state, thereby constraining effectiveness. Second, heuristic methods often rely on exhaustive search, which incurs additional time and resource costs, potentially reducing efficiency. For instance, MOPT employs a pilot fuzzing procedure to estimate the utility of each mutator using its swarm intelligence algorithm, which introduces extra overhead.
+One direction of fuzzing optimization is to adapt the fuzzing strategy to the current fuzzing state in order to enhance effectiveness. Numerous studies have explored heuristic-based methods for this purpose. For example, AFL~\cite{AmericanFuzzyLop} prioritizes the execution of seeds considered favored, while AFLFast~\cite{bohmeCoveragebasedGreyboxFuzzing2019} models the fuzzing process as a Markov chain and schedules seeds based on the rarity of the paths visited. Similarly, MOPT~\cite{lyuMOPTOptimizedMutation2019} formulates fuzzing optimization as a mutator scheduling problem and employs a swarm intelligence algorithm to determine the optimal probability distribution of mutators, thereby improving performance. However, heuristic-based fuzzing optimizations have several limitations. First, heuristics are essentially search methods that focus on finding feasible solutions without guaranteeing optimality. In fuzzing, this means they cannot ensure the highest possible reward for a given fuzzing state, thereby constraining effectiveness. Second, heuristic methods often rely on exhaustive search, which incurs additional time and resource costs, potentially reducing efficiency. For instance, MOPT employs a pilot fuzzing procedure to estimate the utility of each mutator using its swarm intelligence algorithm, which introduces extra overhead. These limitations have motivated researchers to explore more principled methods for optimizing fuzzing strategies.
 
 With the advancement of reinforcement learning (RL) techniques, numerous studies have explored their application to coverage-guided fuzzing (CGF). RL-based fuzzing typically models the problem as a Markov Decision Process (MDP) and learns from past experience to derive an optimal policy for a given state. Based on Bellman optimality, RL can guarantee policy optimality after sufficient training. Moreover, by leveraging past experience, RL reduces unnecessary exploration and thereby decreases the cost of the search process. 
 
 RL-based fuzzing can be broadly categorized into multi-armed bandit (MAB)-based and deep reinforcement learning (DRL)-based approaches. MAB-based fuzzing models the optimization problem as a bandit setting and applies bandit algorithms for decision-making. For example, EcoFuzz~\cite{yueEcoFuzzAdaptiveEnergysaving2020} formulates seed scheduling as an adversarial MAB problem and implements an adaptive scheduler to balance exploration and exploitation. SeamFuzz~\cite{leeLearningSeedadaptiveMutation2023} clusters seeds into groups based on their characteristics and employs Thompson Sampling to identify the optimal mutation probability distribution for each group.
 
-
-
-In contrast, DRL-based fuzzing employs neural networks (NNs) to model fuzzing states and predict optimal policies through learning. Owing to the fitting capacity of NNs, DRL-based approaches provide stronger modeling and prediction capabilities compared to the linear modeling used in MAB-based methods, thereby offering greater potential for improving fuzzing performance. For instance, Böttinger et al.~\cite{bottingerDeepReinforcementFuzzing2018} firstly modeled fuzzing as MDP and adopted a Deep Q-Network to predict the mutator probability distribution given an input bytes as the state. RainFuzz~\cite{binosiRainfuzzReinforcementlearningDriven2023} took the seed bytes as the input state to train PPO and predict the position to be mutated. In addition, several other studies~\cite{gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022,jeonDrPathFinderHybrid2022,liangRLFDirectedFuzzing2022,liuXRLFuzzFuzzingBinaries2024} have demonstrated the feasibility of RL for fuzzing optimization through proof-of-concept experiments.
+While MAB-based approaches demonstrate the promise of RL, their linear modeling capacity restricts expressiveness in complex fuzzing scenarios\cite{cutkoskyDynamicBalancingModel2021}. In contrast, DRL-based fuzzing employs neural networks (NNs) to model fuzzing states and predict optimal policies through learning. Owing to the fitting capacity of NNs, DRL-based approaches provide stronger modeling and prediction capabilities compared to the linear modeling used in MAB-based methods, thereby offering greater potential for improving fuzzing performance. For instance, Böttinger et al.~\cite{bottingerDeepReinforcementFuzzing2018} were the first to model fuzzing as an MDP and adopt a Deep Q-Network to predict the mutator probability distribution given input bytes as the state. RainFuzz~\cite{binosiRainfuzzReinforcementlearningDriven2023} extended this direction by taking seed bytes as input to train PPO and predict mutation positions. In addition, several other studies~\cite{gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022,jeonDrPathFinderHybrid2022,liangRLFDirectedFuzzing2022,liuXRLFuzzFuzzingBinaries2024} have demonstrated the feasibility of RL for fuzzing optimization through proof-of-concept experiments. Together, these pioneering works provided valuable early evidence for the feasibility of DRL-based fuzzing optimization, laying the groundwork for subsequent advances.
 
 % Limitation
 % Effectivness of DRL-based fuzzing has not been addressed: NN is black-box, without explanation, many will doubt the actual effect.
 % No comprehensive state and action modeling, thereby limit the DRL-based fuzzing effectiveness. (example, Deep Reinforcement Fuzzing, RainFuzz)
 % There are many practical problems in implementing DRL on fuzzing, while the current studies only focuing on validate the feasibility while not invesigate the implementation issues. For example: DRL Trainig, IPC, Resource allocation, etc.
-However, in contrast to the successful application of deep reinforcement learning (DRL) in domains such as robotics~\cite{zhaoSurveyRecentAdvancements2024,tangDeepReinforcementLearning2025} and gaming~\cite{silverMasteringChessShogi2017}, and despite its apparent compatibility with fuzzing, DRL-based fuzzing remains far from practical deployment in real-world scenarios, thereby hindering progress in this direction. We summarize the limitations of current DRL-based fuzzing in the following three points.
+However, in contrast to the successful application of DRL in other domains~\cite{zhaoSurveyRecentAdvancements2024,tangDeepReinforcementLearning2025,silverMasteringChessShogi2017} its apparent compatibility with fuzzing, DRL-based fuzzing remains far from practical deployment in real-world scenarios, thereby hindering progress in this direction. We summarize the limitations of current DRL-based fuzzing in the following three points.
 
-Firstly, the effectiveness of DRL-based fuzzing has not been convincingly demonstrated. Unlike other fuzzing optimizations that are grounded in theoretical foundations or practical experience, DRL-based approaches rely on black-box neural network (NN) models with limited explainability, raising doubts about their effectiveness. For example, Böttinger et al. modeled fuzzing as an MDP-based reinforcement learning problem without providing justification for why this formulation would be effective. Thus, it is necessary to theoretically address the effectiveness of DRL in fuzzing.
+Firstly, the effectiveness of DRL-based fuzzing has not been convincingly demonstrated. Prior work~\cite{bottingerDeepReinforcementFuzzing2018} formulated fuzzing as an MDP and applied DRL directly, but without explaining why this formulation should lead to effective strategies in practice. Moreover, since neural networks operate as black-box models, their learned policies are difficult to interpret, raising doubts about whether they truly capture the underlying dynamics of fuzzing. To address this gap, a theoretical foundation is necessary to show that DRL can obtain optimal fuzzing strategies in principal, which would be a foundation we establish in this paper.
 
-Secondly, current DRL-based fuzzing methods have not fully leveraged comprehensive fuzzing information or employed integrated strategies to guide the fuzzing process. In particular, many studies only use single or static states while ignoring runtime information. For example, both Böttinger et al. and RainFuzz represent states as the byte arrays of test cases for the RL agent, while overlooking runtime feedback. Moreover, most DRL-based fuzzers adopt only one strategy, such as defining actions as mutator probability distributions~\cite{bottingerDeepReinforcementFuzzing2018,gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022} or as mutation positions~\cite{binosiRainfuzzReinforcementlearningDriven2023}, without considering hybrid strategies. This lack of integration prevents neural networks from fully exploiting their modeling capacity and limits potential improvements in fuzzing.
+Secondly, current DRL-based fuzzing methods have not fully leveraged the rich information available during fuzzing or designed integrated strategies to guide the process. Most studies rely on narrow state representations (e.g., static byte arrays of test cases) while overlooking runtime feedback such as execution coverage or path novelty. Likewise, they typically restrict actions to a single strategy — for instance, either mutator probability distributions~\cite{bottingerDeepReinforcementFuzzing2018,gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022} or mutation positions~\cite{binosiRainfuzzReinforcementlearningDriven2023} — rather than combining multiple strategies. Such simplified modeling underutilizes the representational capability of neural networks, which are designed to capture complex, high-dimensional relationships. As a result, the potential benefits of DRL for fuzzing are diminished, since the agent cannot learn or exploit the richer dynamics of the fuzzing process.
 
-Finally, challenges in practical implementation remain unresolved. DRL requires a complex training pipeline, including sample generation, training workflows, and policy interactions. However, most DRL-based fuzzing studies have focused primarily on validating feasibility rather than addressing deployment issues~\cite{bottingerDeepReinforcementFuzzing2018,binosiRainfuzzReinforcementlearningDriven2023,gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022}. Unlike simulation environments, which provide well-established mechanisms for interaction~\cite{towersGymnasiumStandardInterface2024,drozdFuzzerGymCompetitiveFramework2018}, fuzzing lacks mature inter-process communication (IPC) support, including efficient sample transmission and policy requests between the fuzzer and RL agents. Consequently, enabling practical deployment of DRL-based fuzzing in real-world scenarios requires further exploration.
+Finally, several challenges in practical implementation remain unresolved. DRL requires a complex training pipeline, encompassing sample generation, training workflows, and policy interactions. Typically, a DRL workflow involves repeated trials on a single target: the model is trained multiple times on collected samples and then applied to the same target to achieve optimal performance. In contrast, fuzzing is an open-ended exploration process with no clear termination, meaning that the traditional DRL workflow cannot be applied directly, and an online learning approach is necessary. Moreover, fuzzing demands high I/O throughput to sustain massive test executions, imposing strict requirements on real-time interaction with the DRL agent. Unlike simulation environments, which provide standardized APIs for synchronous interaction with agents~\cite{towersGymnasiumStandardInterface2024,drozdFuzzerGymCompetitiveFramework2018}, fuzzing under real scenarios involves asynchronous, high-volume test case generation that strains IPC mechanisms, including efficient sample transmission and policy exchange between the fuzzer and RL agents. For example, RainFuzz~\cite{binosiRainfuzzReinforcementlearningDriven2023} reported significant overhead from querying and training the policy model, and Böttinger et al.’s prototype~\cite{bottingerDeepReinforcementFuzzing2018} required a lengthy training phase before applying the policy, illustrating how such challenges hinder practical deployment. Most DRL-based fuzzing studies to date have focused primarily on demonstrating feasibility rather than addressing deployment challenges~\cite{bottingerDeepReinforcementFuzzing2018,binosiRainfuzzReinforcementlearningDriven2023,gongDRLFCfuzzerFuzzingDeepReinforcementLearning2022}. Therefore, enabling the practical deployment of DRL-based fuzzing in real-world scenarios remains an open problem.
 
-In this paper, we propose R2F, a practical DRL-based fuzzing method designed to comprehensively optimize fuzzing strategies. To establish the feasibility of improving fuzzing with DRL, we build upon the work of Böttinger et al.~\cite{bottingerDeepReinforcementFuzzing2018} and formulate coverage-guided fuzzing as an optimization problem, where the objective function is to maximize code coverage. The optimization depends only on the initial corpus and the policy given a state, with the ultimate goal of identifying an optimal policy that yields the maximum coverage reward. We further demonstrate the feasibility of using DRL to derive such an optimal policy based on Bellman optimality. This theoretical validation provides a foundation for the effectiveness of DRL-based fuzzing, ensuring that subsequent work is grounded in theory.
+In this paper, we propose R2F, a practical DRL-based fuzzing framework designed to comprehensively optimize fuzzing strategies. To provide a theoretical foundation for DRL-based fuzzing, we build upon the work of Böttinger et al.~\cite{bottingerDeepReinforcementFuzzing2018} and formulate coverage-guided fuzzing as an optimization problem, where the objective is to maximize code coverage. The optimization depends only on the initial corpus and the policy for a given state, with the ultimate goal of identifying an optimal policy that maximizes the coverage reward. We further demonstrate the feasibility of using DRL to approximate such an optimal policy based on Bellman optimality. Specifically, when fuzzing is modeled as a MDP, Bellman optimality guarantees the existence of an optimal policy, which DRL can approximate by leveraging the modeling capacity of neural networks. This theoretical grounding establishes the validity of DRL-based fuzzing and ensures that subsequent work is built upon a rigorous foundation. Intuitively, Bellman optimality implies that the optimal fuzzing strategy can be derived by recursively choosing the best mutation or scheduling action given the current state and expected future coverage.
 
-To fully exploit the modeling capacity of neural network (NN) models, we design a comprehensive framework for sample construction. This framework incorporates diverse runtime information from fuzzing, enabling fuzzing states to be more effectively learned and modeled. Inspired by MOPT~\cite{lyuMOPTOptimizedMutation2019}, we model the policy as probability distributions over all possible actions. With this formulation, any fuzzing strategy can be readily converted into policies that the DRL agent can learn and optimize, ensuring both scalability and efficiency. In addition, we design a hierarchical reward function that balances robustness with discrimination, maintaining stable values for the DRL agent.
+To fully exploit the representational capability of neural networks with complete state and action modeling, we design a comprehensive framework for sample construction and integrated policy learning. 
+\paragraph{Sample construction} The framework incorporates diverse runtime information from fuzzing, enabling fuzzing states to be more effectively captured and modeled. 
+\paragraph{Policy modeling} Inspired by MOPT~\cite{lyuMOPTOptimizedMutation2019}, we model the policy as probability distributions over all possible actions in a strategy. With this formulation, any fuzzing strategy can be readily converted into policies that the DRL agent can learn and optimize, ensuring both scalability and efficiency. 
+\paragraph{Reward function} We design a hierarchical reward function that balances stability with discrimination, providing robust yet informative feedback for the DRL agent.
 
-To address the practical implementation challenges of integrating fuzzing with DRL, we develop a dual-model DRL framework with multiple inter-process communication (IPC) mechanisms. Specifically, the framework employs two models that separately handle training and policy inference, ensuring that fuzzing execution is not disrupted by DRL training. Furthermore, we use sockets for sample transmission and shared memory for policy interaction, thereby ensuring both robustness of training and fuzzing performance. Finally, we incorporate additional strategies such as warm-up phases and adaptive control to further enhance fuzzing effectiveness.
 
+To address practical implementation challenges in training and IPC integration, we develop a dual-model DRL framework with multiple IPC mechanisms. Specifically, the framework employs two models that separately handle training and policy inference, realizing an approximate online learning mechanism while preventing DRL training from disrupting fuzzing execution. Moreover, we use sockets for sample transmission and shared memory for policy interaction, thereby ensuring both training robustness and fuzzing performance. Finally, we incorporate additional mechanisms such as warm-up phases and adaptive control to further enhance fuzzing effectiveness.
 
-%\begin{itemize}
-%	\item Firstly, \textbf{no formalization has been proposed for DRL-based fuzzing optimization, nor has its theoretical feasibility been established}. Specifically, the lack of formalization in DRL-based methods complicates their deployment in practical scenarios \cite{liFirstLookEffect2021, liDeepLearningCoverageguided2022}. Furthermore, the challenges and assumptions that must be addressed remain unclear, leaving the direction of future investigations uncertain. The absence of a solid theoretical foundation also raises doubts about the optimality, robustness, and reliability of these methods. As a result, while DRL-based fuzzing optimization has shown promise in initial empirical studies, it continues to face significant hurdles in advancing further.
-%	
-%	\item Furthermore, there has been limited investigation into developing a comprehensive \textbf{practical DRL-based CGF framework} for real-world fuzz testing. Specifically, some studies assess the assumptions within simulated environments, where feedback is collected and decisions are made at a single execution step \cite{drozdFuzzerGymCompetitiveFramework2018,paduraruRiverFuzzRLOpensourceTool2021}. However, real fuzzing evaluations operate at much higher throughput rates and more complex environments, and the assumptions tested in simulators may not be adaptable to practical scenarios. Additionally, many studies, often preliminary empirical investigations, have not assessed these assumptions across broader benchmarks or with a more comprehensive evaluation. As a result, these studies may fail to provide a more in-depth analysis of the performance of DRL-based fuzzing, thereby hindering the progress of subsequent research that builds upon their findings.
-%\end{itemize}
-
-%To address the aforementioned challenges, we propose ALFurther, a lightweight DRL-based CGF optimization framework tailored for real-world fuzzing scenarios. Building upon prior efforts \cite {binosiRainfuzzReinforcementlearningDriven2023, liangRLFDirectedFuzzing2022, bottingerDeepReinforcementFuzzing2018}, the main idea of our work is to formalize the fundamental components of DRL‑based fuzzing and empirically demonstrate its feasibility on real‑world fuzzing scenarios. We begin by formulating the target of CGF as an optimization problem that satisfies the conditions of an MDP, demonstrating that it can be solved using the Bellman Optimality Equation. This formalization provides the theoretical foundation for DRL-based fuzzing optimization. Building upon this basis, we develop an integrated DRL optimization framework for fuzzing. The framework includes constructing an MDP model based on comprehensive data derived from the fuzzing process, alongside a lightweight model training and policy enforcement mechanism using an offline RL algorithm. Additionally, we implement several strategies to integrate the framework with existing fuzzing tools seamlessly. As a result, the fuzzing performance could be enhanced through DRL policies while minimizing the impact on overhead.
-
-We implemented the R2F prototype on AFL++~\cite{fioraldiAFLCombiningIncremental2020}. To evaluate its effectiveness, we conducted extensive experiments on two public benchmarks, FuzzBench~\cite{metzmanFuzzBenchOpenFuzzer2021} and MAGMA~\cite{hazimehMagmaGroundtruthFuzzing2021}, comparing R2F with AFL++ and several state-of-the-art (SOTA) fuzzers employing scheduling or mutation optimizations. In addition, we evaluated R2F on nine real-world programs using AFL++ to perform supplementary experiments and ablation studies. The results show that R2F consistently outperforms other fuzzers in both code coverage and bug discovery, while also reducing bug discovery time. \textbf{Specifically, R2F could … (concrete experimental results to be added).} Furthermore, R2F demonstrates superior performance in distributed and long-term fuzzing scenarios.
+We implemented the R2F prototype on AFL++~\cite{fioraldiAFLCombiningIncremental2020}. To evaluate its effectiveness, we conducted extensive experiments on two public benchmarks, FuzzBench~\cite{metzmanFuzzBenchOpenFuzzer2021} and MAGMA~\cite{hazimehMagmaGroundtruthFuzzing2021}, comparing R2F with AFL++ and several state-of-the-art fuzzers employing scheduling or mutation optimizations. In addition, we evaluated R2F on nine real-world programs using AFL++ to perform supplementary experiments and ablation studies. The results show that R2F consistently outperforms other fuzzers in both code coverage and bug discovery, while also reducing bug discovery time. \textbf{Specifically, R2F could … (concrete experimental results to be added). Furthermore, R2F could keep a relatively low overhead, with (concrete experimental results to be added).} In addition, R2F demonstrates superior performance in distributed and long-term fuzzing scenarios.
 
 The contributions of this work are as follows:
 \begin{itemize}
-	\item We formulate coverage-guided fuzzing as an optimization problem that depends solely on the initial corpus and the policy for each state, and demonstrate that it can be solved optimally using Bellman optimality. This theoretical result establishes the feasibility of enhancing fuzzing with deep reinforcement learning (DRL).
-	\item Building on this foundation, we propose R2F, a practical DRL-based fuzzing framework that incorporates comprehensive sample construction and policy design, fully leveraging the modeling capacity of neural networks to improve fuzzing effectiveness.
-	\item To enable DRL-based fuzzing in real-world scenarios, we design a set of mechanisms for model training and IPC, ensuring the effective integration of DRL with fuzzing in practice.
+	\item We provide a theoretical foundation for DRL-based fuzzing by formulating coverage-guided fuzzing as an optimization problem that depends solely on the initial corpus and the policy for each state. We show that, under this formulation, Bellman optimality guarantees the existence of an optimal policy, establishing the feasibility of enhancing fuzzing with DRL.
+	\item We design and implement R2F, a practical DRL-based fuzzing framework. R2F incorporates comprehensive sample construction, explicit policy modeling, and a hierarchical reward function, enabling neural networks to effectively guide fuzzing strategies.
+	\item To enable deployment in real-world scenarios, we introduce a dual-model architecture with efficient IPC mechanisms for training and inference, ensuring robust integration of DRL with fuzzing.
 	\item We conduct extensive experiments on FuzzBench and MAGMA to evaluate R2F’s performance in terms of code coverage and bug discovery. Results show that R2F consistently outperforms state-of-the-art fuzzers in both coverage and bug detection speed. Furthermore, we perform ablation studies on real-world programs, demonstrating significant improvements in distributed and long-duration fuzzing scenarios.
 \end{itemize}
 
 To promote open-source science, we will release the prototype implementation after publication.
 
+\section{Background and Problem Definition}\label{sec:background}
+In this section, we first introduce the fundamentals of MDP and the Bellman Optimality Equation. We then demonstrate how coverage-guided fuzzing can be formulated to satisfy the Bellman Optimality Equation, thereby enabling its solution through DRL algorithms.
+\subsection{Background}
+This section will introduce the basis of MDP and Bellman Optimality Equation.
+\subsubsection{Markov Decision Process}
+An MDP is a framework for modeling sequential decision-making problems. It satisfies the Markov property and can be defined as a four-tuple $\left(\mathcal{S}_{t}, \mathcal{A}_{t}, \mathcal{S}_{t+1}, \mathcal{R}(\mathcal{S}_{t}, \mathcal{S}_{t+1})\right)$, where $\mathcal{S}_t$ denotes the state of the environment at time $t$, $\mathcal{A}_t$ represents the action taken by the agent to interact with the environment, and $\mathcal{R}(\mathcal{S}_{t}, \mathcal{S}_{t+1})$ denotes the reward obtained from transitioning from $\mathcal{S}_t$ to $\mathcal{S}_{t+1}$.
 
-%We implemented ALFurther based on AFL++ and evaluated its performance on two publicly available benchmarks: Unibench \cite{liUNIFUZZHolisticPragmatic2021} and MAGMA \cite{hazimehMagmaGroundtruthFuzzing2021}. Unibench consists of diverse real-world programs containing bugs, making it suitable for assessing coverage reach and bug discovery capabilities, while MAGMA focuses specifically on bug detection, providing a more detailed analysis of bug discovery performance. We compared the performance of ALFurther with that of the original AFL and AFL++, as well as with other fuzzers optimized through energy- and mutation-scheduling strategies. The results demonstrate that ALFurther outperforms the original fuzzer, discovering $1.43\times$ more paths and $N$ more bugs. Furthermore, ALFurther triggered 22 bugs and discovered 18 bugs more quickly than the original fuzzer. Additionally, ALFurther achieved the highest mean coverage among all evaluated fuzzers. These findings validate the effectiveness of DRL-based fuzzing optimization in practical fuzzing scenarios.
-%
-%The contribution of our study could be summarized as follows:
-%\begin{itemize} 
-%	\item We formalize the objective of Coverage-Guided Fuzzing (CGF) as an optimization problem that satisfies the properties of a Markov Decision Process (MDP) and can be solved using the Bellman optimality equation. This formulation demonstrates the theoretical feasibility of optimizing fuzzing strategies through DRL techniques.
-%	\item We further explore the practical application of RL-based CGF optimization and introduce ALFurther, a prototype DRL-based fuzzing optimization framework tailored for real-world fuzzing scenarios. The framework defines the fuzzing MDP and provides a lightweight method for RL training and policy execution, which can be seamlessly integrated into the original fuzzing process with minimal overhead.
-%	\item We comprehensively evaluate the framework using the Unibench and MAGMA benchmarks. The results validate the effectiveness of RL, leading to substantial improvements in path exploration and bug discovery efficiency, as well as enhanced bug discovery capability. These findings highlight the potential for further exploration in this direction.
-%\end{itemize}
-%
-%To facilitate further validation and in the spirit of open-source collaboration within the computer science community, we would release our implementation after the publication of the paper for continued research and exploration.
+The fuzzing process can be modeled as an MDP, as demonstrated in~\cite{bottingerDeepReinforcementFuzzing2018}. Building on this insight, we formulate coverage-guided fuzzing (CGF) as an MDP and show that it can be expressed as an optimization problem dependent only on the initial states and the policies applied at each fuzzing state.
 
-\newpage
+\subsubsection{Bellman Optimality Equation}
+The Bellman Optimality Equation characterizes the recursive structure of optimal policies in Markov decision processes (MDPs)~\cite{richardbellmanTheoryDynamicProgramming1952,suttonReinforcementLearningSecond2018}. It states that the value of an optimal policy at a given state can be expressed as the maximum expected return achievable by selecting an action in that state and then following the optimal policy thereafter:
+\begin{equation}
+	V^*(s) = \max_{a}\left( r(s,a) + \gamma \sum_{s'} P(s' \mid s,a), V^*(s') \right)
+	\label{eq:bellman_equation}
+\end{equation}
+where $s$ denotes a state, $a$ is an action, $r(s,a)$ is the reward for executing $a$ in state $s$, $P(s' \mid s,a)$ is the transition probability from $s$ to $s'$ given action $a$, and $V^*(s)$ is the optimal expected return starting from state $s$.
 
-% we have released implementation fuzzer at \textit{https://github.com/Rulkallos/ALFurther} for continued research and exploration.
+The Bellman Optimality Equation formalizes the principle that an optimal sequential strategy can be constructed recursively: at each step, the best decision maximizes the immediate reward plus the optimal value of future states. Therefore, we could model CGF as a sequential optimization problem and try to derive the optimal policy based on the equation to maximize the coverage.
 
-
-\section{Problem Formalization}\label{sec:background}
-
-In this section, we formalize the objective of CGF as an optimization problem that can be modeled as an MDP. We then demonstrate the theoretical feasibility of employing deep reinforcement learning (DRL) for CGF optimization based on the Bellman optimal equation. Finally, we identify the principal challenges inherent to this approach, which will be addressed in Section \ref{sec:method}. 
-
-\subsection{Problem Definition}
-
-\subsubsection{Coverage-guided Fuzzing}
-
-Generally, the target of coverage-guided fuzzing $R$ is to maximize the code coverage explored within the specified time $T$, which could be formulated as:
+\subsection{Fuzzing as an Optimization Problem}
+The objective of CGF, denoted as $R$, is to maximize code coverage within a given time budget $T$, which can be formulated as:
 
 \begin{equation}
-	R = \max \mathbb{E}_{T}\left[\cup_{s\in S}\text{Cov}(s)\right]\label{eq:cgf_target}
+	R = \max \mathbb{E}\left[\cup_{s\in S}\text{Cov}(s)\right]\label{eq:cgf_target}
 \end{equation}
-where $s$ refers to a testcase in the testcase set $S$. During the fuzzing process, the set $S$ is extended by generating new seeds from the existing ones, which could be described as:
+
+where $s$ denotes a testcase in the set of testcases $S$. During fuzzing, $S$ is expanded by generating new seeds from existing ones, expressed as:
+
 \begin{align}
 	\begin{split}
 		S_{n+1} &= S_{n}\cup s_{n+1} \\
 		&= S_n\cup f(S_{n}) \\
-		&= \mathcal{F}(S_n)
+		&= \mathcal{F}(S_n).
 	\end{split}
 \end{align}
-and $S_n$ is also extended from $S_{n-1}$. As a result, the formula could be presented as:
+
+Here, $S_n$ is itself extended from $S_{n-1}$. Consequently, the overall seed set can be represented as:
+
 \begin{equation}
-	S_{N} = \cup_{n\in[1, N]}\mathcal{F}^n(S_0)
-\end{equation}
-where $S_0$ refers to the initial seed set, $\mathcal{F}$ means the scheduling strategy.
-
-Therefore, the target of coverage-guided fuzzing could be converted to find a scheduling strategy $\mathcal{F}$, such that the seed set generated by $\mathcal{F}$ from the set $S$ could achieve max coverage on the target program in the specified time $t$.
-
-\subsubsection{Markov Decision Process}\label{subsubsec:markov_decision_process}
-%\subsection{Markov Decision Process}\label{subsec:markov_decision_process}
-MDP is a framework to model sequential decision-making problems. The process should satisfy the Markov property and could be defined by a four-tuple of elements $\left(\mathcal{S}_{t}, \mathcal{A}_{t}, \mathcal{S}_{t+1}, \mathcal{R}(\mathcal{S}_{t}, \mathcal{S}_{t+1})\right)$, where $\mathcal{S}_t$ refers to the state of the explored environment at a specific time $t$, $A_t$ indicates the action the agent implements to interact with the environment, and $\mathcal{R}(\mathcal{S}_{t}, \mathcal{S}_{t+1})$ means the reward the agent obtains by transitioning from $\mathcal{S}_t$ to $\mathcal{S}_{t+1}$.
-
-The fuzzing process could be modeled as an MDP. Firstly, the coverage of the current seed is only associated with the prior seed and the mutation operations, which satisfy the Markov property. Besides, the state $\mathcal{S}$ and action $\mathcal{A}$ could be defined by the seed state and fuzzing strategy $\mathcal{F}$. Moreover,  the immediate reward $R$ of a state transition could be viewed as the new coverage found by the new seed generated from the old, which could be presented as:
-\begin{equation}
-	r_{s_{n}} = \text{Cov}(s_{n}) - \left(\text{Cov}(s_{n}) \cap (\cup_{s\in S_{n-1}}\text{Cov}(s))\right)
+	S_{N} = \cup_{n\in[1, N]}\mathcal{F}^n(S_0),
 \end{equation}
 
-Therefore, Equation \ref{eq:cgf_target} could be converted to:
+where $S_0$ is the initial seed set and $\mathcal{F}$ denotes the scheduling strategy.
+
+Thus, CGF can be modeled as an optimization problem that depends solely on the initial state (initial corpus) and the policy applied at each fuzzing state. The goal is to determine the optimal policy that maximizes the reward $R$. The reward can be viewed as a combination of the coverage discovered by the initial corpus and the additional coverage obtained from new seeds, which can be formulated as:
+
 \begin{align}
 	\begin{split}
-		R &= \max{\mathbb{E}_{t}\left[\sum_{s\in S/S_0}r_{s} + \cup_{s\in S_0}\text{Cov}(s)\right]} \\
-		&= R_0 + \max{\mathbb{E}_{t}\left[\sum_{s\in S/S_0}r_{s}\right]}
+		R &= \max \mathbb{E}\left[\sum_{s\in S/S_0}\mathcal{R}_{s} + \cup_{s\in S_0}\text{Cov}(s)\right] \\
+		&= \mathcal{R}_0 + \sum_{s\in S/S_0} \max \mathbb{E}\left[\mathcal{R}_{s}\right],
 	\end{split}
+	\label{eq:recursive_reward}
 \end{align}
-where $R_0$ refers to the coverage obtained by the initial seed set $S_0$. Therefore, the process could employ the Bellman equation\cite{richardbellmanTheoryDynamicProgramming1952} to maximize the reward $R$.
 
-\subsubsection{Fuzzing Optimization}
-%\subsection{Fuzzing Optimization}
-Our work addresses the problem of fuzzing optimization, with a particular focus on enhancing existing fuzzing strategies using runtime information collected during the testing process. Unlike previous studies that rely on pre-analysis and prior knowledge to enhance fuzzing performance, our approach offers greater adaptability, potentially leading to improved performance. This presents an exciting avenue for further research.
+where $\mathcal{R}_0$ denotes the coverage obtained from the initial corpus $S_0$, and $\mathcal{R}_{s}$ represents the coverage newly discovered by a seed generated from its parent:
 
-Our work focuses on the fuzzing optimization problem. Specifically, we emphasize enhancing existing fuzzing strategies based on the runtime information collected during the testing. Contrasting with the work that adopts pre-analysis and prior knowledge to improve the fuzzing performance, our approach could provide more general adaptivity and potentially higher performance, presenting an avenue for further research.
-
-We are inspired by the previous DRL-based fuzzing studies \cite{bottingerDeepReinforcementFuzzing2018,binosiRainfuzzReinforcementlearningDriven2023,liangRLFDirectedFuzzing2022}, which model the exploration process as an MDP. Going further on this basis, our approach attempts to find optimal strategies for each fuzzing state based on the Bellman Equation, which could be represented as:
 \begin{equation}
-	V^{\pi^*}(\mathcal{S}_0) = \max_{\mathcal{A}}\left\{\mathcal{R}_0 + \gamma \sum_{\mathcal{S}', \mathcal{S}\in \mathcal{S}_0}P(\mathcal{S}'|\mathcal{S},\mathcal{A})V^{\pi^*}(\mathcal{S}')\right\}
+	\mathcal{R}_{s} \sim \text{Cov}(s) - \left(\text{Cov}(s) \cap \left(\cup{s\in S_{n-1}}\text{Cov}(s)\right)\right).
 \end{equation}
-where $\pi^*$ refers to the optimal policy of the process, $V^{\pi^*}$ is the value function of the optimal policy representing the maximum expected reward the policy could achieve, $P(\mathcal{S}'|\mathcal{S}, \mathcal{A})$ means the transition probability from the state $\mathcal{S}$ to the state $\mathcal{S}'$ with the action $\mathcal{A}$. Since the value function evaluates the cumulative reward according to the current state and might contain bias in the dynamic decision process, the further value function is multiplied by a discount factor $\gamma \in [0, 1]$ to limit the errors.
 
-For an intermediate state $\mathcal{S}$, the target function of DRL is to maximize the expected reward that could be obtained from $\mathcal{S}$, which could be calculated as:
+Let $\mathcal{S}_{n-1}$ denote the fuzzing state before discovering a new seed $s$, and $\mathcal{S}_{n}$ the state after its discovery. Then, the reward $\mathcal{R}_{s}$ can be interpreted as the feedback from the transition between fuzzing states:
+
 \begin{equation}
-	V^{\pi^*}(\mathcal{S}) = \max_{\mathcal{F}}\left[\mathcal{R}(\mathcal{S}, \mathcal{F}) + \gamma \mathbb{E}_{\mathcal{S}'}V^{\pi^*}(\mathcal{S}')\right]
+	\mathcal{R}(\mathcal{S}_{n-1}, \mathcal{S}_{n}) = \mathcal{R}_{s}.
 \end{equation}
-where $\mathcal{R}(\mathcal{S}, \mathcal{F}$ means the reward gained from $\mathcal{S}$ by implementing the strategy $\mathcal{F}$. Consequently, the target of DRL-based CGF optimization could be summarized to find an optimal policy such that:
+
+Accordingly, for any state $\mathcal{S}_{n}$ in the coverage-guided fuzzing process, the objective is to maximize both the immediate reward and the expected future rewards, expressed as:
 \begin{equation}
-	\pi^*(\mathcal{S}) = \textit{arg} \max_{\mathcal{F}}\left(\mathcal{R}(\mathcal{S}, \mathcal{F}) + \gamma\mathbb{E}_{\mathcal{S}'}\left[V^{\pi^*}(\mathcal{S}')\right]\right)
-	\label{eq:max_reward}
+	J(\pi, \mathcal{S}_{n}) = \max\left[\mathcal{R}\left(S_n, \pi(\mathcal{S}_{n})\right) + \mathbb{E}_{s'\sim P(\cdot\mid S_n, \pi(\mathcal{S}_{n}))} \mathbb{R}(s')\right]
 \end{equation}
-The equation suggests that an optimal strategy, which maximizes the reward (coverage in CGF) derived from a given state, can be predicted by optimizing the expected value $\mathbb{E}_{\mathcal{S}'}\left[V^{\pi^*}(\mathcal{S}')\right]$ in Equation \ref{eq:max_reward}.
+where $\mathbb{E}_{s'\sim P(\cdot\mid S_n, \pi(\mathcal{S}_{n}))} \mathbb{R}(s')$ denotes the expected reward over all potential successor states $s'$ reachable from $\mathcal{S}{n}$. According to the Bellman Optimality Equation, this expectation of cumulative rewards can be approximated by a value function with a discount factor, i.e., $\gamma \sum{s'} P(s' \mid s,a)V^*(s')$. Consequently, coverage-guided fuzzing satisfies the Bellman recursive formulation and can be optimized under the Bellman Optimality Equation.
 
-Consequently, we could aim to derive optimal fuzzing strategies using the equation, based on the existing strategy and reward function $r(s, \mathcal{F})$, which could be implemented with DRL methods.
+\subsection{Feasibility of DRL-based Fuzzing Optimization}
+Building on the above foundation, the goal of coverage-guided fuzzing can be formulated as identifying an optimal policy $\mathcal{F}^*(\mathcal{S}_{n})=\pi^*$ such that, for each fuzzing state $\mathcal{S}_{n}$, it satisfies the optimal value function:
+\begin{equation}
+		V^*(\mathcal{S}_{n})\;=\;\max_{\pi} \Big[\mathcal{R}(\mathcal{S}_{n},\pi(\mathcal{S}_{n}))+\gamma\,\mathbb{E}_{s'\sim P(\cdot\mid \mathcal{S}_{n},\pi(\mathcal{S}_{n}))} V^*(s')\Big]
+\end{equation}
+The Bellman Optimality Equation guarantee that any policy $\pi^*$ realizing $\pi^*(s)\in\arg\max_a V^*(s,a)$ achieves the maximal expected coverage. Consequently, the problem reduces to finding both an optimal value function $V^*$, which estimates the expected cumulative reward, and an optimal policy $\pi^*$ consistent with $V^*$.
+
+DRL algorithms serve as practical approximators for solving this problem. These methods employ neural network models to estimate $V^*(s)$ from data collected during fuzzing. Once the value function is fitted, an actor model can be trained to maximize rewards according to $V^*$. Thus, DRL provides a principled mechanism to automatically learn effective fuzzing strategies, rather than relying solely on hand-crafted heuristics.
 
 
-\subsection{Challenge}\label{subsec:challenge}
-
+\section{Design of ALFurther}\label{sec:method}
 \begin{figure*}[t!]
 	\centerline{\includegraphics[width=0.9\textwidth]{fig/simplified_overview.pdf}}
 	\caption{The overview of ALFruther.}
 	\label{fig:overview}
 \end{figure*}
-
-Our study encounters the following challenges.
-\begin{itemize}
-	\item \textbf{MDP Construction}: The structure of information collected during fuzzing must be carefully organized to satisfy the properties of MDP, ensuring that it can be effectively trained and policed using the Bellman optimality equation.
-	\item \textbf{Agent Training}: Common DRL training frameworks rely on simulated environments, where decisions and feedback are processed in a single step, and training samples are constructed to a sequential trajectory for effective training \cite{schulmanProximalPolicyOptimization2017}. However, such methods are not practical for real fuzzing scenarios, according to the dependency of fuzzing on high throughput. Therefore, the training workflow must be redesigned to adapt to the tremendous and asynchronous feedback in fuzzing processes.
-	\item \textbf{Compatibility with Existing Fuzzers}: Fuzzing processes and DRL methodologies exhibit fundamentally distinctness. For example, DRL approaches rely on extensive exploration and training before policing, whereas popular fuzzers such as AFL handle exploration and scheduling synchronously. Therefore, specialized strategies should be devised for the integration.
-\end{itemize}
-
-
-\section{Design of ALFurther}\label{sec:method}
 
 Figure \ref{fig:overview} presents the overall structure of our approach, which implements a DRL-based fuzzing strategy optimization framework under real-world scenarios, as demonstrated in Section \ref{sec:background}. Our design comprises three primary components: MDP construction, agent processing, and compatibility strategies.
 

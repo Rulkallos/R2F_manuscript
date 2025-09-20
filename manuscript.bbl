@@ -74,6 +74,14 @@ M.~Lee, S.~Cha, and H.~Oh, ``Learning seed-adaptive mutation strategies for
   greybox fuzzing,'' in \emph{2023 {{Ieee}}/Acm 45th {{International
   Conference}} on {{Software Engineering}} (Icse)}, 2023, pp. 384--396.
 
+\bibitem{cutkoskyDynamicBalancingModel2021}
+A.~Cutkosky, C.~Dann, A.~Das, C.~Gentile, A.~Pacchiano, and M.~Purohit,
+  ``Dynamic balancing for model selection in bandits and {{RL}},'' in
+  \emph{Proceedings of the 38th {{International Conference}} on {{Machine
+  Learning}}}, ser. Proceedings of Machine Learning Research, M.~Meila and
+  T.~Zhang, Eds., vol. 139.\hskip 1em plus 0.5em minus 0.4em\relax PMLR, Jul.
+  2021, pp. 2276--2285.
+
 \bibitem{bottingerDeepReinforcementFuzzing2018}
 K.~B{\"o}ttinger, P.~Godefroid, and R.~Singh, ``Deep reinforcement fuzzing,''
   in \emph{2018 {{IEEE Security}} and {{Privacy Workshops}} (Spw)}, 2018, pp.
@@ -145,13 +153,19 @@ M.~Towers, A.~Kwiatkowski, J.~Terry, J.~U. Balis, G.~De~Cola, T.~Deleu,
 W.~Drozd and M.~D. Wagner, ``{{FuzzerGym}}: A competitive framework for fuzzing
   and learning,'' 2018.
 
-\bibitem{liUNIFUZZHolisticPragmatic2021}
-Y.~Li, S.~Ji, Y.~Chen, S.~Liang, W.-H. Lee, Y.~Chen, C.~Lyu, C.~Wu, R.~Beyah,
-  P.~Cheng, K.~Lu, and T.~Wang, ``{{UNIFUZZ}}: {{A}} holistic and pragmatic
-  metrics-driven platform for evaluating fuzzers,'' in \emph{30th {{USENIX}}
-  Security Symposium, {{USENIX}} Security 2021, August 11-13, 2021}, M.~Bailey
-  and R.~Greenstadt, Eds.\hskip 1em plus 0.5em minus 0.4em\relax USENIX
-  Association, 2021, pp. 2777--2794.
+\bibitem{fioraldiAFLCombiningIncremental2020}
+A.~Fioraldi, D.~Maier, H.~Ei{\ss}feldt, and M.~Heuse, ``{{AFL}}++ : Combining
+  incremental steps of fuzzing research,'' in \emph{14th {{Usenix Workshop}} on
+  {{Offensive Technologies}} (Woot 20)}.\hskip 1em plus 0.5em minus 0.4em\relax
+  USENIX Association, Aug. 2020.
+
+\bibitem{metzmanFuzzBenchOpenFuzzer2021}
+J.~Metzman, L.~Szekeres, L.~Simon, R.~Sprabery, and A.~Arya, ``{{FuzzBench}}:
+  {{An}} open fuzzer benchmarking platform and service,'' in \emph{Proceedings
+  of the 29th {{ACM}} Joint Meeting on European Software Engineering Conference
+  and Symposium on the Foundations of Software Engineering}, ser.
+  {{ESEC}}/{{FSE}} 2021.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY,
+  USA: Association for Computing Machinery, 2021, pp. 1393--1403.
 
 \bibitem{hazimehMagmaGroundtruthFuzzing2021}
 A.~Hazimeh, A.~Herrera, and M.~Payer, ``Magma: {{A}} ground-truth fuzzing
@@ -162,9 +176,10 @@ A.~Hazimeh, A.~Herrera, and M.~Payer, ``Magma: {{A}} ground-truth fuzzing
 {Richard Bellman}, ``On the theory of dynamic programming,'' \emph{Proceedings
   of the National Academy of Sciences}, vol.~38, no.~8, pp. 716--719, 1952.
 
-\bibitem{schulmanProximalPolicyOptimization2017}
-J.~Schulman, F.~Wolski, P.~Dhariwal, A.~Radford, and O.~Klimov, ``Proximal
-  policy optimization algorithms,'' 2017.
+\bibitem{suttonReinforcementLearningSecond2018}
+R.~Sutton and A.~Barto, \emph{Reinforcement Learning, Second Edition: An
+  Introduction}, ser. Adaptive Computation and Machine Learning Series.\hskip
+  1em plus 0.5em minus 0.4em\relax MIT Press, 2018.
 
 \bibitem{bartoNeuronlikeAdaptiveElements1983}
 A.~G. Barto, R.~S. Sutton, and C.~W. Anderson, ``Neuronlike adaptive elements
@@ -198,11 +213,13 @@ P.~Jauernig, D.~Jakobovic, S.~Picek, E.~Stapf, and A.-R. Sadeghi, ``{{DARWIN}}:
   {{California}}, {{Usa}}, {{February}} 27 - {{March}} 3, 2023}.\hskip 1em plus
   0.5em minus 0.4em\relax The Internet Society, 2023.
 
-\bibitem{fioraldiAFLCombiningIncremental2020}
-A.~Fioraldi, D.~Maier, H.~Ei{\ss}feldt, and M.~Heuse, ``{{AFL}}++ : Combining
-  incremental steps of fuzzing research,'' in \emph{14th {{Usenix Workshop}} on
-  {{Offensive Technologies}} (Woot 20)}.\hskip 1em plus 0.5em minus 0.4em\relax
-  USENIX Association, Aug. 2020.
+\bibitem{liUNIFUZZHolisticPragmatic2021}
+Y.~Li, S.~Ji, Y.~Chen, S.~Liang, W.-H. Lee, Y.~Chen, C.~Lyu, C.~Wu, R.~Beyah,
+  P.~Cheng, K.~Lu, and T.~Wang, ``{{UNIFUZZ}}: {{A}} holistic and pragmatic
+  metrics-driven platform for evaluating fuzzers,'' in \emph{30th {{USENIX}}
+  Security Symposium, {{USENIX}} Security 2021, August 11-13, 2021}, M.~Bailey
+  and R.~Greenstadt, Eds.\hskip 1em plus 0.5em minus 0.4em\relax USENIX
+  Association, 2021, pp. 2777--2794.
 
 \bibitem{dolan-gavittLAVALargescaleAutomated2016}
 B.~{Dolan-Gavitt}, P.~Hulin, E.~Kirda, T.~Leek, A.~Mambretti, W.~Robertson,
@@ -212,14 +229,6 @@ B.~{Dolan-Gavitt}, P.~Hulin, E.~Kirda, T.~Leek, A.~Mambretti, W.~Robertson,
 
 \bibitem{AFLplusplusAflcov2025}
 ``{{AFLplusplus}}/afl-cov,'' Advanced Fuzzing League ++, Apr. 2025.
-
-\bibitem{metzmanFuzzBenchOpenFuzzer2021}
-J.~Metzman, L.~Szekeres, L.~Simon, R.~Sprabery, and A.~Arya, ``{{FuzzBench}}:
-  {{An}} open fuzzer benchmarking platform and service,'' in \emph{Proceedings
-  of the 29th {{ACM}} Joint Meeting on European Software Engineering Conference
-  and Symposium on the Foundations of Software Engineering}, ser.
-  {{ESEC}}/{{FSE}} 2021.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY,
-  USA: Association for Computing Machinery, 2021, pp. 1393--1403.
 
 \bibitem{QuicAFLTriage2025}
 ``Quic/{{AFLTriage}},'' Qualcomm Innovation Center, Inc., Mar. 2025.
@@ -310,6 +319,10 @@ P.~Jha, J.~Scott, J.~S. Ganeshna, M.~Singh, and V.~Ganesh, ``{{BertRLFuzzer}}:
   Artificial Intelligence, {{EAAI}} 2014, February 20-27, 2024, Vancouver,
   Canada}, M.~J. Wooldridge, J.~G. Dy, and S.~Natarajan, Eds.\hskip 1em plus
   0.5em minus 0.4em\relax AAAI Press, 2024, pp. 23\,521--23\,522.
+
+\bibitem{schulmanProximalPolicyOptimization2017}
+J.~Schulman, F.~Wolski, P.~Dhariwal, A.~Radford, and O.~Klimov, ``Proximal
+  policy optimization algorithms,'' 2017.
 
 \bibitem{devlinBERTPretrainingDeep2019}
 J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova, ``{{BERT}}: {{Pre-training}}

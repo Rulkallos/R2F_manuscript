@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.29)  17 SEP 2025 09:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.29)  20 SEP 2025 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,29 +521,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
-1.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
+2.
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2
 025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-
 ]
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 94--95
-[]\OT1/ptm/m/n/10 However, in con-trast to the suc-cess-ful ap-pli-ca-tion of
+
+[2]
+Underfull \hbox (badness 1360) in paragraph at lines 105--106
+[]\OT1/ptm/m/n/10 We im-ple-mented the R2F pro-to-type on AFL++ [23].
  []
 
 
-
-[2
-
-]
-Underfull \hbox (badness 1360) in paragraph at lines 117--118
-[]\OT1/ptm/m/n/10 We im-ple-mented the R2F pro-to-type on AFL++ [31].
+Underfull \hbox (badness 1590) in paragraph at lines 110--111
+\OT1/ptm/m/n/10 fuzzing frame-work. R2F in-cor-po-rates com-pre-hen-sive
  []
 
 
@@ -551,190 +548,206 @@ Underfull \hbox (badness 1360) in paragraph at lines 117--118
 
 
 [3]
-Underfull \hbox (badness 2221) in paragraph at lines 154--155
- \OT1/ptm/m/it/10 1) Coverage-guided Fuzzing: [][] \OT1/ptm/m/n/10 Gen-er-ally,
- the tar-get of
- []
 
-
-
-
-
-[4]
-<fig/simplified_overview.pdf, id=31, 493.845pt x 174.6525pt>
+<fig/simplified_overview.pdf, id=26, 493.845pt x 174.6525pt>
 File: fig/simplified_overview.pdf Graphic file (type pdf)
 <use fig/simplified_overview.pdf>
-Package pdftex.def Info: fig/simplified_overview.pdf  used on input line 222.
+Package pdftex.def Info: fig/simplified_overview.pdf  used on input line 201.
 (pdftex.def)             Requested size: 464.39685pt x 164.23732pt.
 
+LaTeX Warning: Reference `subsubsec:markov_decision_process' on page 4 undefine
+d on input line 213.
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 251--252
+Underfull \hbox (badness 2846) in paragraph at lines 220--221
 []\OT1/ptm/b/n/10 Global Bitmap\OT1/ptm/m/n/10 : a cu-mu-la-tive bitmap track-i
 ng all
  []
 
 
 
-[5 <./fig/simplified_overview.pdf>]
-<fig/agent_structure2.pdf, id=44, 204.765pt x 174.6525pt>
+[4]
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+
+
+<fig/agent_structure2.pdf, id=32, 204.765pt x 174.6525pt>
 File: fig/agent_structure2.pdf Graphic file (type pdf)
 <use fig/agent_structure2.pdf>
-Package pdftex.def Info: fig/agent_structure2.pdf  used on input line 295.
+Package pdftex.def Info: fig/agent_structure2.pdf  used on input line 264.
 (pdftex.def)             Requested size: 258.0pt x 220.07396pt.
 
-
-LaTeX Warning: Reference `subsec:sample_construction' on page 6 undefined on in
-put line 299.
-
+LaTeX Warning: Reference `subsec:sample_construction' on page 5 undefined on in
+put line 268.
 
 
-
-Underfull \hbox (badness 1789) in paragraph at lines 304--305
+Underfull \hbox (badness 1789) in paragraph at lines 273--274
 []\OT1/ptm/b/n/10 Observer\OT1/ptm/m/n/10 : im-ple-mented via a pre-trained Res
 Net[]18
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-16.
+
+
+[5 <./fig/simplified_overview.pdf>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+85.
+
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
+
+
 [6 <./fig/agent_structure2.pdf>]
+
+LaTeX Warning: Reference `subsec:challenge' on page 7 undefined on input line 4
+28.
+
+
 
 
 
 [7]
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 562--563
+Underfull \hbox (badness 1490) in paragraph at lines 531--532
 []\OT1/ptm/m/n/10 In our eval-u-a-tion, we em-ployed 12 tar-gets from the
  []
 
 
 
-[8]
 
+
+[8]
 <results/coverage/cflow_edge_cov.pdf, id=71, 462.52798pt x 346.89601pt>
 File: results/coverage/cflow_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/cflow_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/cflow_edge_cov.pdf  used on input lin
-e 620.
+e 589.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
-20.
-(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1phv.fd
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 5
+89.
+ (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 <results/coverage/flvmeta_edge_cov.pdf, id=72, 462.52798pt x 346.89601pt>
 File: results/coverage/flvmeta_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/flvmeta_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/flvmeta_edge_cov.pdf  used on input l
-ine 621.
+ine 590.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/imginfo_edge_cov.pdf, id=73, 462.52798pt x 346.89601pt>
 File: results/coverage/imginfo_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/imginfo_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/imginfo_edge_cov.pdf  used on input l
-ine 622.
+ine 591.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/infotocap_edge_cov.pdf, id=74, 462.52798pt x 346.89601pt>
 File: results/coverage/infotocap_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/infotocap_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/infotocap_edge_cov.pdf  used on input
- line 623.
+ line 592.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/jhead_edge_cov.pdf, id=75, 462.52798pt x 346.89601pt>
 File: results/coverage/jhead_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/jhead_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/jhead_edge_cov.pdf  used on input lin
-e 625.
+e 594.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/jq_edge_cov.pdf, id=76, 462.52798pt x 346.89601pt>
 File: results/coverage/jq_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/jq_edge_cov.pdf>
-Package pdftex.def Info: results/coverage/jq_edge_cov.pdf  used on input line 6
-26.
+Package pdftex.def Info: results/coverage/jq_edge_cov.pdf  used on input line 5
+95.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/mp3gain_edge_cov.pdf, id=77, 462.52798pt x 346.89601pt>
 File: results/coverage/mp3gain_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/mp3gain_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/mp3gain_edge_cov.pdf  used on input l
-ine 627.
+ine 596.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/mp42aac_edge_cov.pdf, id=78, 462.52798pt x 346.89601pt>
 File: results/coverage/mp42aac_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/mp42aac_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/mp42aac_edge_cov.pdf  used on input l
-ine 628.
+ine 597.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/mujs_edge_cov.pdf, id=79, 462.52798pt x 346.89601pt>
 File: results/coverage/mujs_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/mujs_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/mujs_edge_cov.pdf  used on input line
- 630.
+ 599.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/pdftotext_edge_cov.pdf, id=80, 462.52798pt x 346.89601pt>
 File: results/coverage/pdftotext_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/pdftotext_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/pdftotext_edge_cov.pdf  used on input
- line 631.
+ line 600.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/tcpdump_edge_cov.pdf, id=81, 462.52798pt x 346.89601pt>
 File: results/coverage/tcpdump_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/tcpdump_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/tcpdump_edge_cov.pdf  used on input l
-ine 632.
+ine 601.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 <results/coverage/tiffsplit_edge_cov.pdf, id=82, 462.52798pt x 346.89601pt>
 File: results/coverage/tiffsplit_edge_cov.pdf Graphic file (type pdf)
 <use results/coverage/tiffsplit_edge_cov.pdf>
 Package pdftex.def Info: results/coverage/tiffsplit_edge_cov.pdf  used on input
- line 633.
+ line 602.
 (pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
 <results/crash/cflow_crash.pdf, id=83, 462.52798pt x 346.89601pt>
 File: results/crash/cflow_crash.pdf Graphic file (type pdf)
 <use results/crash/cflow_crash.pdf>
-Package pdftex.def Info: results/crash/cflow_crash.pdf  used on input line 646.
+Package pdftex.def Info: results/crash/cflow_crash.pdf  used on input line 615.
 
 (pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
 <results/crash/flvmeta_crash.pdf, id=84, 462.52798pt x 346.89601pt>
 File: results/crash/flvmeta_crash.pdf Graphic file (type pdf)
 <use results/crash/flvmeta_crash.pdf>
-Package pdftex.def Info: results/crash/flvmeta_crash.pdf  used on input line 64
-7.
+Package pdftex.def Info: results/crash/flvmeta_crash.pdf  used on input line 61
+6.
 (pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
 <results/crash/mp3gain_crash.pdf, id=85, 462.52798pt x 346.89601pt>
 File: results/crash/mp3gain_crash.pdf Graphic file (type pdf)
 <use results/crash/mp3gain_crash.pdf>
-Package pdftex.def Info: results/crash/mp3gain_crash.pdf  used on input line 64
-8.
+Package pdftex.def Info: results/crash/mp3gain_crash.pdf  used on input line 61
+7.
 (pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
 <results/crash/mp42aac_crash.pdf, id=86, 462.52798pt x 346.89601pt>
 File: results/crash/mp42aac_crash.pdf Graphic file (type pdf)
 <use results/crash/mp42aac_crash.pdf>
-Package pdftex.def Info: results/crash/mp42aac_crash.pdf  used on input line 65
-0.
+Package pdftex.def Info: results/crash/mp42aac_crash.pdf  used on input line 61
+9.
 (pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
 <results/crash/pdftotext_crash.pdf, id=87, 462.52798pt x 346.89601pt>
 File: results/crash/pdftotext_crash.pdf Graphic file (type pdf)
 <use results/crash/pdftotext_crash.pdf>
 Package pdftex.def Info: results/crash/pdftotext_crash.pdf  used on input line 
-651.
+620.
 (pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
 <results/crash/tiffsplit_crash.pdf, id=88, 462.52798pt x 346.89601pt>
 File: results/crash/tiffsplit_crash.pdf Graphic file (type pdf)
 <use results/crash/tiffsplit_crash.pdf>
 Package pdftex.def Info: results/crash/tiffsplit_crash.pdf  used on input line 
-652.
+621.
 (pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+
+LaTeX Warning: Reference `appdx:magma_lua' on page 9 undefined on input line 69
+4.
+
 
 
 [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4013) has occurred while \output is active []
 
 
+
+
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
 
 
@@ -745,109 +758,94 @@ ge_cov.pdf> <./results/coverage/mp3gain_edge_cov.pdf> <./results/coverage/mp42a
 ac_edge_cov.pdf> <./results/coverage/mujs_edge_cov.pdf> <./results/coverage/pdf
 totext_edge_cov.pdf> <./results/coverage/tcpdump_edge_cov.pdf> <./results/cover
 age/tiffsplit_edge_cov.pdf>]
-
-LaTeX Warning: Reference `appdx:magma_lua' on page 11 undefined on input line 7
-25.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 
-Underfull \vbox (badness 2401) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [11 <./results/crash/cflow_crash.pdf> <./results/crash/flvmeta_crash.pdf> <./re
 sults/crash/mp3gain_crash.pdf> <./results/crash/mp42aac_crash.pdf> <./results/c
 rash/pdftotext_crash.pdf> <./results/crash/tiffsplit_crash.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 <results/ablation_study/overhead_infotocap.pdf, id=901, 578.16pt x 433.62pt>
 File: results/ablation_study/overhead_infotocap.pdf Graphic file (type pdf)
 <use results/ablation_study/overhead_infotocap.pdf>
 Package pdftex.def Info: results/ablation_study/overhead_infotocap.pdf  used on
- input line 899.
+ input line 868.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/overhead_imginfo.pdf, id=902, 578.16pt x 433.62pt>
 File: results/ablation_study/overhead_imginfo.pdf Graphic file (type pdf)
 <use results/ablation_study/overhead_imginfo.pdf>
 Package pdftex.def Info: results/ablation_study/overhead_imginfo.pdf  used on i
-nput line 900.
+nput line 869.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/overhead_pdftotext.pdf, id=903, 578.16pt x 433.62pt>
 File: results/ablation_study/overhead_pdftotext.pdf Graphic file (type pdf)
 <use results/ablation_study/overhead_pdftotext.pdf>
 Package pdftex.def Info: results/ablation_study/overhead_pdftotext.pdf  used on
- input line 901.
+ input line 870.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/overhead_tiffsplit.pdf, id=904, 578.16pt x 433.62pt>
 File: results/ablation_study/overhead_tiffsplit.pdf Graphic file (type pdf)
 <use results/ablation_study/overhead_tiffsplit.pdf>
 Package pdftex.def Info: results/ablation_study/overhead_tiffsplit.pdf  used on
- input line 902.
+ input line 871.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/reward_infotocap.pdf, id=905, 578.16pt x 433.62pt>
 File: results/ablation_study/reward_infotocap.pdf Graphic file (type pdf)
 <use results/ablation_study/reward_infotocap.pdf>
 Package pdftex.def Info: results/ablation_study/reward_infotocap.pdf  used on i
-nput line 909.
+nput line 878.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/reward_mp3gain.pdf, id=906, 578.16pt x 433.62pt>
 File: results/ablation_study/reward_mp3gain.pdf Graphic file (type pdf)
 <use results/ablation_study/reward_mp3gain.pdf>
 Package pdftex.def Info: results/ablation_study/reward_mp3gain.pdf  used on inp
-ut line 910.
+ut line 879.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/reward_pdftotext.pdf, id=907, 578.16pt x 433.62pt>
 File: results/ablation_study/reward_pdftotext.pdf Graphic file (type pdf)
 <use results/ablation_study/reward_pdftotext.pdf>
 Package pdftex.def Info: results/ablation_study/reward_pdftotext.pdf  used on i
-nput line 911.
+nput line 880.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 <results/ablation_study/reward_tiffsplit.pdf, id=908, 578.16pt x 433.62pt>
 File: results/ablation_study/reward_tiffsplit.pdf Graphic file (type pdf)
 <use results/ablation_study/reward_tiffsplit.pdf>
 Package pdftex.def Info: results/ablation_study/reward_tiffsplit.pdf  used on i
-nput line 912.
+nput line 881.
 (pdftex.def)             Requested size: 129.0pt x 96.74646pt.
 
 
 [12]
-Underfull \vbox (badness 1635) has occurred while \output is active []
-
-
 
 
 
 [13 <./results/ablation_study/overhead_infotocap.pdf> <./results/ablation_study
 /overhead_imginfo.pdf> <./results/ablation_study/overhead_pdftotext.pdf> <./res
-ults/ablation_study/overhead_tiffsplit.pdf>]
+ults/ablation_study/overhead_tiffsplit.pdf> <./results/ablation_study/reward_in
+fotocap.pdf> <./results/ablation_study/reward_mp3gain.pdf> <./results/ablation_
+study/reward_pdftotext.pdf> <./results/ablation_study/reward_tiffsplit.pdf>]
 
 
 
-[14 <./results/ablation_study/reward_infotocap.pdf> <./results/ablation_study/r
-eward_mp3gain.pdf> <./results/ablation_study/reward_pdftotext.pdf> <./results/a
-blation_study/reward_tiffsplit.pdf>]
+[14]
 
 
 
 [15]
 
+(./manuscript.bbl
 
-Underfull \vbox (badness 3701) has occurred while \output is active []
-
-
-
-[16] (./manuscript.bbl
-
-
-
-[17]
+[16]
 
 )
 
-[18] (./manuscript.aux)
+[17] (./manuscript.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -858,13 +856,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7253 strings out of 473190
- 127207 string characters out of 5719979
- 604551 words of memory out of 5000000
- 30365 multiletter control sequences out of 15000+600000
+ 7256 strings out of 473190
+ 127308 string characters out of 5719979
+ 600100 words of memory out of 5000000
+ 30368 multiletter control sequences out of 15000+600000
  613102 words of font info for 133 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 57i,22n,65p,1439b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,22n,65p,1963b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dis
@@ -882,10 +880,10 @@ w/courier/ucrb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a
 e/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/
 fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (18 pages, 6645755 bytes).
+Output written on manuscript.pdf (17 pages, 6646516 bytes).
 PDF statistics:
- 1345 PDF objects out of 1440 (max. 8388607)
- 249 compressed objects within 3 object streams
+ 1342 PDF objects out of 1440 (max. 8388607)
+ 247 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
